@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tủ Nhựa Chất Lượng Hà Nội</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Nội Thất Chất Lượng Hà Nội">
+    <meta name="description"
+        content="Khám phá các sản phẩm tủ nhựa cao cấp của chúng tôi, được thiết kế với chất lượng và tính thẩm mỹ cao.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tunhuachatluonghanoi.vercel.app/index.html">
+    <meta property="og:title" content="Nội Thất Chất Lượng Hà Nội">
+    <meta property="og:description"
+        content="Khám phá các sản phẩm tủ nhựa cao cấp của chúng tôi, được thiết kế với chất lượng và tính thẩm mỹ cao.">
+    <meta property="og:image"
+        content="https://github.com/vuhoanghadev/tunhuachatluonghanoi/blob/main/image/anh-link-web.PNG?raw=true">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tunhuachatluonghanoi.vercel.app/index.html">
+    <meta property="twitter:title" content="Nội Thất Chất Lượng Hà Nội">
+    <meta property="twitter:description"
+        content="Khám phá các sản phẩm tủ nhựa cao cấp của chúng tôi, được thiết kế với chất lượng và tính thẩm mỹ cao.">
+    <meta property="twitter:image"
+        content="https://github.com/vuhoanghadev/tunhuachatluonghanoi/blob/main/image/anh-link-web.PNG?raw=true">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./image/logo.svg">
+
+    <!-- Stylesheets -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu {
+                display: block;
+            }
+
+            .desktop-menu {
+                display: none;
+            }
+        }
+
+        .product-card {
+            transition: all 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Hero Section Animations */
+        @keyframes float {
+            0% {
+                transform: translateY(0px) translateX(0px);
+            }
+
+            25% {
+                transform: translateY(-10px) translateX(5px);
+            }
+
+            50% {
+                transform: translateY(0px) translateX(10px);
+            }
+
+            75% {
+                transform: translateY(10px) translateX(5px);
+            }
+
+            100% {
+                transform: translateY(0px) translateX(0px);
+            }
+        }
+
+        .animate-pulse-slow {
+            animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        .shadow-glow-orange {
+            box-shadow: 0 0 15px rgba(249, 115, 22, 0.3);
+        }
+
+        /* Particles */
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(249, 115, 22, 0.2);
+            pointer-events: none;
+        }
+
+        .particle-1 {
+            width: 80px;
+            height: 80px;
+            left: 10%;
+            top: 20%;
+            animation: float 15s ease-in-out infinite;
+            opacity: 0.4;
+        }
+
+        .particle-2 {
+            width: 60px;
+            height: 60px;
+            right: 15%;
+            top: 30%;
+            animation: float 18s ease-in-out infinite reverse;
+            opacity: 0.3;
+        }
+
+        .particle-3 {
+            width: 40px;
+            height: 40px;
+            left: 20%;
+            bottom: 20%;
+            animation: float 12s ease-in-out infinite 2s;
+            opacity: 0.2;
+        }
+
+        .particle-4 {
+            width: 100px;
+            height: 100px;
+            right: 5%;
+            bottom: 10%;
+            animation: float 20s ease-in-out infinite 1s;
+            opacity: 0.15;
+        }
+
+        /* Sửa CSS cho ảnh */
+        .product-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .avatar-image {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        /* Sửa CSS cho nút điện thoại */
+        .phone-button {
+            width: 55px;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: #f97316;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            bottom: 10px;
+        }
+
+        .phone-button:hover {
+            background-color: #ea580c;
+            transform: scale(1.05);
+        }
+
+        .phone-button i {
+            font-size: 1.25rem;
+        }
+
+        /* CSS cho Testimonials */
+        .testimonial-avatar {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #f97316;
+        }
+
+        .testimonial-slider {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonial-slide {
+            transition: transform 0.5s ease;
+        }
+
+        .testimonial-nav {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+        }
+
+        .testimonial-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #e5e7eb;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-dot.active {
+            background-color: #f97316;
+            transform: scale(1.2);
+        }
+
+        /* Mobile Menu Styles */
+        .mobile-menu-content {
+            position: fixed;
+            top: 72px;
+            left: 0;
+            right: 0;
+            background: white;
+            padding: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 50;
+        }
+
+        .mobile-menu-item {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu-item:hover {
+            background-color: #f3f4f6;
+        }
+
+        .mobile-menu-item i {
+            width: 24px;
+            margin-right: 12px;
+            color: #f97316;
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+    <!-- tiện ích facebook  -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v22.0"></script>
+
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <!-- Logo -->
+            <a href="./index.html" class="logo-container">
+                <div class="logo-icon">
+                    <img src="./image/logo.svg" alt="" srcset="">
+                </div>
+                <div class="logo-text">
+                    <h1>Nội Thất Chất Lượng Hà Nội</h1>
+                    <p>Giải pháp tủ nhựa cao cấp</p>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center desktop-nav">
+                <a href="./index.html" class="nav-link active">
+                    <span>Trang chủ</span>
+                    <span class="nav-link-underline"></span>
+                </a>
+                <a href="./sanpham.html" class="nav-link">
+                    <span>Sản phẩm</span>
+                    <span class="nav-link-underline"></span>
+                </a>
+                <a href="./bosuutap.html" class="nav-link">
+                    <span>Bộ sưu tập</span>
+                    <span class="nav-link-underline"></span>
+                </a>
+                <a href="./blog.html" class="nav-link">
+                    <span>Blog</span>
+                    <span class="nav-link-underline"></span>
+                </a>
+                <a href="./baogiaAI.html" class="nav-link">
+                    <span>Báo giá</span>
+                    <span class="nav-link-underline"></span>
+                </a>
+                <button class="cta-button">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Tư vấn miễn phí</span>
+                    <span class="cta-button-underline"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-toggle" class="mobile-menu-toggle md:hidden">
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+            </button>
+        </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="mobile-menu-inner" style="background-color: snow;">
+                <div class="mobile-menu-header" style="height: 95px;">
+                    <a href="#" class="logo-container mobile-logo-container">
+                        <div class="logo-icon mobile-logo-icon">
+                            <img src="./image/logo.svg" alt="" srcset="">
+                        </div>
+                        <div class="logo-text mobile-logo-text">
+                            <h1>Nội Thất Chất Lượng Hà Nội</h1>
+                            <p>Giải pháp tủ nhựa cao cấp</p>
+                        </div>
+                    </a>
+                    <button id="mobile-menu-close" class="mobile-menu-toggle">
+                        <span class="toggle-bar"></span>
+                        <span class="toggle-bar"></span>
+                        <span class="toggle-bar"></span>
+                    </button>
+                </div>
+
+
+
+                <h3 class="category-title">Danh mục sản phẩm</h3>
+
+                <div class="product-categories">
+                    <a href="#" class="category-box">
+                        <div class="category-image">
+                            <img src="./image/icon tủ quần áo.png" alt="Tủ quần áo">
+                        </div>
+                        <div class="category-name">Tủ quần áo</div>
+                    </a>
+
+                    <a href="#" class="category-box">
+                        <div class="category-image">
+                            <img src="./image/icon tủ bếp.png" alt="Tủ bếp">
+                        </div>
+                        <div class="category-name">Tủ bếp</div>
+                    </a>
+
+                    <a href="#" class="category-box">
+                        <div class="category-image">
+                            <img src="./image/icon bàn làm việc.png" alt="Tủ bàn học">
+                        </div>
+                        <div class="category-name">Bàn làm việc</div>
+                    </a>
+
+                    <a href="#" class="category-box">
+                        <div class="category-image">
+                            <img src="./image/icon bàn học.png" alt="Bàn học">
+                        </div>
+                        <div class="category-name">Bàn Học</div>
+                    </a>
+
+                    <a href="#" class="category-box">
+                        <div class="category-image">
+                            <img src="./image/icon tủ giày.png" alt="Tủ giày">
+                        </div>
+                        <div class="category-name">Tủ giày</div>
+                    </a>
+
+                    <a href="#" class="category-box">
+                        <div class="category-image">
+                            <img src="./image/icon tủ sách.png" alt="Tủ sách">
+                        </div>
+                        <div class="category-name">Tủ sách</div>
+                    </a>
+
+                    <a href="#" class="category-box">
+                        <div class="category-image">
+                            <img src="./image/icon giường ngủ.png" alt="Giường ngủ">
+                        </div>
+                        <div class="category-name">Giường ngủ</div>
+                    </a>
+
+                </div>
+
+                <div class="mobile-menu-divider"></div>
+
+                <div class="quick-links">
+                    <h3 class="quick-links-title">Truy cập nhanh</h3>
+                    <div class="quick-links-grid">
+                        <a href="#" class="quick-link-item">
+                            <i class="fas fa-home"></i>
+                            <span>Trang chủ</span>
+                        </a>
+                        <a href="#" class="quick-link-item">
+                            <i class="fas fa-images"></i>
+                            <span>Bộ sưu tập</span>
+                        </a>
+                        <a href="#" class="quick-link-item">
+                            <i class="fas fa-newspaper"></i>
+                            <span>Tin tức</span>
+                        </a>
+                        <a href="#" class="quick-link-item">
+                            <i class="fas fa-phone"></i>
+                            <span>Liên hệ</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mobile-menu-divider"></div>
+
+                <div class="mobile-cta">
+                    <button class="mobile-cta-button">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Tư vấn miễn phí</span>
+                    </button>
+                </div>
+
+                <div class="mobile-contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Hotline: <a href="tel:0972774646">097.277.4646</a></span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email: <a href="mailto:info@noithatnhuahanoi.com">info@noithatnhuahanoi.com</a></span>
+                    </div>
+                </div>
+
+                <div class="mobile-social">
+                    <a href="#" class="mobile-social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="mobile-social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="mobile-social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="mobile-social-icon"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+
+    <!-- Hero Section bản video -->
+    <!-- <section class="pt-0">
+        <div class="relative h-screen overflow-hidden pt-20">
+            <video id="hero-video" autoplay loop muted playsinline preload="metadata"
+                class="hero-video w-full h-full object-cover transform scale-105 hover:scale-100 transition-transform duration-10000">
+                <source src="./video/banner2.mp4" type="video/webm">
+                <source src="./video/banner2.mp4" type="video/mp4">
+                <source src="./video/banner2.mp4" type="video/mp4">
+                <img src="https://images.unsplash.com/photo-1638885930125-85350348d266?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Tủ nhựa cao cấp" class="w-full h-full object-cover">
+            </video>
+            <div id="video-fallback" class="hidden absolute inset-0">
+                <img src="https://images.unsplash.com/photo-1638885930125-85350348d266?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Tủ nhựa cao cấp" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent flex items-center">
+
+
+                <div class="container mx-auto px-4 text-white relative z-10" style="margin-top: 12vh;">
+                    <div class="max-w-3xl">
+                        <div
+                            class="inline-block px-4 py-1 border border-orange-400 rounded-full text-orange-200 text-sm font-medium mb-6 backdrop-blur-sm bg-orange-900/30 shadow-glow-orange">
+                            Giải pháp nội thất thông minh
+                        </div>
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight tracking-tight">
+                            <span
+                                class="block text-transparent bg-clip-text bg-gradient-to-r from-orange-200 via-yellow-100 to-white drop-shadow-md">Tủ
+                                Nhựa Cao Cấp</span>
+                            <span class="block mt-2 drop-shadow-md">Cho Không Gian Sống Hoàn Hảo</span>
+                        </h1>
+                        <p class="text-lg md:text-xl mb-10 text-orange-100 max-w-2xl drop-shadow-sm">Thiết kế tối ưu •
+                            Chất lượng vượt
+                            trội • Bảo hành 5 năm</p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="baogiaAI.html"
+                                class="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-lg text-lg hover:from-orange-600 hover:to-orange-700 transition duration-300 flex items-center shadow-lg hover:shadow-orange-500/30 transform hover:-translate-y-1">
+                                <i class="fas fa-robot mr-2"></i>
+                                Báo giá thông minh với AI
+                            </a>
+                            <button
+                                class="bg-transparent border-2 border-orange-300/50 text-white px-8 py-4 rounded-lg text-lg hover:bg-orange-900/30 transition duration-300 flex items-center backdrop-blur-sm">
+                                <i class="fas fa-images mr-2"></i>
+                                Xem bộ sưu tập
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="absolute bottom-10 right-10 w-32 h-32 border-2 border-orange-400/20 rounded-full animate-pulse hidden md:block">
+            </div>
+            <div
+                class="absolute top-20 left-10 w-16 h-16 border border-orange-400/20 rounded-full animate-ping hidden md:block">
+            </div>
+
+            <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                <div class="particle particle-1"></div>
+                <div class="particle particle-2"></div>
+                <div class="particle particle-3"></div>
+                <div class="particle particle-4"></div>
+            </div>
+        </div>
+    </section> -->
+
+
+
+    <!-- Hero Section bản hình ảnh-->
+    <section class="pt-0">
+        <div class="relative h-screen overflow-hidden pt-20">
+            <img src="https://images.unsplash.com/photo-1638885930125-85350348d266?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Tủ nhựa cao cấp"
+                class="w-full h-full object-cover transform scale-105 hover:scale-100 transition-transform duration-10000">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent flex items-center">
+
+
+                <div class="container mx-auto px-4 text-white relative z-10" style="margin-top: 12vh;">
+                    <div class="max-w-3xl">
+                        <div
+                            class="inline-block px-4 py-1 border border-orange-400 rounded-full text-orange-200 text-sm font-medium mb-6 backdrop-blur-sm bg-orange-900/30 shadow-glow-orange">
+                            Giải pháp nội thất thông minh
+                        </div>
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight tracking-tight">
+                            <span
+                                class="block text-transparent bg-clip-text bg-gradient-to-r from-orange-200 via-yellow-100 to-white drop-shadow-md">Tủ
+                                Nhựa Cao Cấp</span>
+                            <span class="block mt-2 drop-shadow-md">Cho Không Gian Sống Hoàn Hảo</span>
+                        </h1>
+                        <p class="text-lg md:text-xl mb-10 text-orange-100 max-w-2xl drop-shadow-sm">Thiết kế tối ưu •
+                            Chất lượng vượt
+                            trội • Bảo hành 5 năm</p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="baogiaAI.html"
+                                class="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-lg text-lg hover:from-orange-600 hover:to-orange-700 transition duration-300 flex items-center shadow-lg hover:shadow-orange-500/30 transform hover:-translate-y-1">
+                                <i class="fas fa-robot mr-2"></i>
+                                Báo giá thông minh với AI
+                            </a>
+                            <button
+                                class="bg-transparent border-2 border-orange-300/50 text-white px-8 py-4 rounded-lg text-lg hover:bg-orange-900/30 transition duration-300 flex items-center backdrop-blur-sm">
+                                <i class="fas fa-images mr-2"></i>
+                                Xem bộ sưu tập
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="absolute bottom-10 right-10 w-32 h-32 border-2 border-orange-400/20 rounded-full animate-pulse hidden md:block">
+            </div>
+            <div
+                class="absolute top-20 left-10 w-16 h-16 border border-orange-400/20 rounded-full animate-ping hidden md:block">
+            </div>
+
+            <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                <div class="particle particle-1"></div>
+                <div class="particle particle-2"></div>
+                <div class="particle particle-3"></div>
+                <div class="particle particle-4"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- About Us & Competitive Advantages Section -->
+    <section class="py-24 relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-gray-50 to-white z-0"></div>
+        <div class="absolute -top-20 -left-20 w-80 h-80 bg-orange-100 rounded-full opacity-30 blur-3xl"></div>
+        <div class="absolute -bottom-40 -right-20 w-80 h-80 bg-orange-200 rounded-full opacity-30 blur-3xl"></div>
+
+        <!-- Decorative Elements -->
+        <div
+            class="absolute top-20 right-10 w-24 h-24 border-2 border-orange-200 rounded-full opacity-20 animate-pulse hidden lg:block">
+        </div>
+        <div
+            class="absolute bottom-20 left-10 w-16 h-16 border border-orange-300 rounded-full opacity-30 animate-ping hidden lg:block">
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <div class="inline-block px-3 py-1 bg-orange-100 text-orange-600 rounded-full text-sm font-medium mb-4">
+                    CÂU CHUYỆN CỦA CHÚNG TÔI
+                </div>
+                <h2 class="text-4xl font-bold text-gray-900 mb-4 relative inline-block">
+                    Về Chúng Tôi
+                    <div
+                        class="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-orange-500 to-orange-300 rounded-full transform scale-x-100">
+                    </div>
+                </h2>
+                <p class="text-gray-600 max-w-3xl mx-auto text-lg">
+                    Với hơn 10 năm kinh nghiệm, chúng tôi tự hào mang đến những giải pháp nội thất thông minh và hiện
+                    đại cho người Việt
+                </p>
+            </div>
+
+            <!-- Main Content -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- About Us Content -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div class="relative rounded-2xl overflow-hidden shadow-xl group">
+                        <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?q=80&w=1992&auto=format&fit=crop"
+                            alt="Nội thất chất lượng"
+                            class="w-full h-96 object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end">
+                            <div class="p-6 text-white">
+                                <h3 class="text-2xl font-bold mb-2">Tầm nhìn của chúng tôi</h3>
+                                <p class="text-white/90">Trở thành đơn vị hàng đầu trong lĩnh vực nội thất nhựa cao cấp
+                                    tại Việt Nam</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-6">
+                        <div
+                            class="bg-white rounded-xl p-6 shadow-lg transform hover:-translate-y-2 transition-transform duration-300 border border-gray-100">
+                            <div class="text-5xl font-bold text-orange-500 mb-2 flex items-center">
+                                <span class="counter-value" data-count="1000">1000</span><span>+</span>
+                            </div>
+                            <p class="text-gray-700 font-medium">Khách hàng tin tưởng</p>
+                        </div>
+                        <div
+                            class="bg-white rounded-xl p-6 shadow-lg transform hover:-translate-y-2 transition-transform duration-300 border border-gray-100">
+                            <div class="text-5xl font-bold text-orange-500 mb-2 flex items-center">
+                                <span class="counter-value" data-count="500">500</span><span>+</span>
+                            </div>
+                            <p class="text-gray-700 font-medium">Dự án hoàn thành</p>
+                        </div>
+                    </div>
+
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="bg-orange-500 text-white px-8 py-3 rounded-lg hover:bg-orange-600 transition duration-300 shadow-lg hover:shadow-orange-300/30 flex items-center">
+                            <i class="fas fa-users mr-2"></i> Về chúng tôi
+                        </a>
+                        <a href="#"
+                            class="bg-white text-orange-500 border-2 border-orange-500 px-8 py-3 rounded-lg hover:bg-orange-50 transition duration-300 flex items-center">
+                            <i class="fas fa-images mr-2"></i> Dự án
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Competitive Advantages -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 relative overflow-hidden">
+                        <!-- Decorative Element -->
+                        <div class="absolute -top-10 -right-10 w-40 h-40 bg-orange-100 rounded-full opacity-50"></div>
+
+                        <div class="relative">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-8 flex items-center">
+                                <span
+                                    class="bg-orange-100 text-orange-600 w-10 h-10 rounded-lg flex items-center justify-center mr-3">
+                                    <i class="fas fa-award"></i>
+                                </span>
+                                Lợi Thế Cạnh Tranh
+                            </h3>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <!-- Advantage 1 -->
+                                <div
+                                    class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300 group">
+                                    <div
+                                        class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-orange-500 transition-colors duration-300">
+                                        <i
+                                            class="fas fa-medal text-orange-500 text-2xl group-hover:text-white transition-colors duration-300"></i>
+                                    </div>
+                                    <h4
+                                        class="text-xl font-semibold mb-3 group-hover:text-orange-500 transition-colors duration-300">
+                                        Chất Lượng Hàng Đầu</h4>
+                                    <p class="text-gray-600">Sử dụng vật liệu cao cấp, quy trình sản xuất nghiêm ngặt,
+                                        đảm bảo độ bền và tính thẩm mỹ.</p>
+                                </div>
+
+                                <!-- Advantage 2 -->
+                                <div
+                                    class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300 group">
+                                    <div
+                                        class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-orange-500 transition-colors duration-300">
+                                        <i
+                                            class="fas fa-tools text-orange-500 text-2xl group-hover:text-white transition-colors duration-300"></i>
+                                    </div>
+                                    <h4
+                                        class="text-xl font-semibold mb-3 group-hover:text-orange-500 transition-colors duration-300">
+                                        Đội Ngũ Chuyên Nghiệp</h4>
+                                    <p class="text-gray-600">Thợ thi công lành nghề với trên 5 năm kinh nghiệm, tận tâm
+                                        với từng chi tiết sản phẩm.</p>
+                                </div>
+
+                                <!-- Advantage 3 -->
+                                <div
+                                    class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300 group">
+                                    <div
+                                        class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-orange-500 transition-colors duration-300">
+                                        <i
+                                            class="fas fa-clock text-orange-500 text-2xl group-hover:text-white transition-colors duration-300"></i>
+                                    </div>
+                                    <h4
+                                        class="text-xl font-semibold mb-3 group-hover:text-orange-500 transition-colors duration-300">
+                                        Thi Công Nhanh Chóng</h4>
+                                    <p class="text-gray-600">Cam kết thời gian thi công đúng tiến độ, tối ưu hóa quy
+                                        trình làm việc.</p>
+                                </div>
+
+                                <!-- Advantage 4 -->
+                                <div
+                                    class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300 group">
+                                    <div
+                                        class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-orange-500 transition-colors duration-300">
+                                        <i
+                                            class="fas fa-shield-alt text-orange-500 text-2xl group-hover:text-white transition-colors duration-300"></i>
+                                    </div>
+                                    <h4
+                                        class="text-xl font-semibold mb-3 group-hover:text-orange-500 transition-colors duration-300">
+                                        Bảo Hành Dài Hạn</h4>
+                                    <p class="text-gray-600">Chế độ bảo hành lên đến 5 năm cho mọi sản phẩm, hỗ trợ kỹ
+                                        thuật 24/7.</p>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial -->
+                            <div class="mt-10 bg-orange-50 p-6 rounded-xl border border-orange-100 relative">
+                                <div
+                                    class="absolute -top-5 -left-5 w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center text-white">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p class="italic text-gray-700 mb-4">"Nội Thất Chất Lượng Hà Nội đã mang đến cho gia
+                                    đình tôi những sản phẩm nội thất tuyệt vời, đúng với mong đợi và ngân sách của chúng
+                                    tôi."</p>
+                                <div class="flex items-center">
+                                    <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Khách hàng"
+                                        class="w-12 h-12 rounded-full mr-4 border-2 border-white shadow">
+                                    <div>
+                                        <h5 class="font-semibold">Chị Thanh Hương</h5>
+                                        <p class="text-sm text-gray-500">Khách hàng tại Hà Nội</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Process Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Quy Trình Làm Việc</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="relative text-center group">
+                    <div
+                        class="w-20 h-20 bg-orange-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 group-hover:scale-110 transition duration-300">
+                        <i class="fas fa-comments text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Tư Vấn & Khảo Sát</h3>
+                    <p class="text-gray-600">Tư vấn thiết kế và khảo sát không gian miễn phí tại nhà</p>
+                    <!-- Arrow -->
+                    <div class="hidden md:block absolute top-10 -right-4 w-8 h-8 text-orange-500">
+                        <i class="fas fa-chevron-right text-2xl"></i>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="relative text-center group">
+                    <div
+                        class="w-20 h-20 bg-orange-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 group-hover:scale-110 transition duration-300">
+                        <i class="fas fa-pencil-ruler text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Thiết Kế 3D</h3>
+                    <p class="text-gray-600">Thiết kế 3D theo yêu cầu và chỉnh sửa đến khi ưng ý</p>
+                    <!-- Arrow -->
+                    <div class="hidden md:block absolute top-10 -right-4 w-8 h-8 text-orange-500">
+                        <i class="fas fa-chevron-right text-2xl"></i>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="relative text-center group">
+                    <div
+                        class="w-20 h-20 bg-orange-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 group-hover:scale-110 transition duration-300">
+                        <i class="fas fa-tools text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Sản Xuất</h3>
+                    <p class="text-gray-600">Sản xuất tại xưởng với đội ngũ thợ lành nghề</p>
+                    <!-- Arrow -->
+                    <div class="hidden md:block absolute top-10 -right-4 w-8 h-8 text-orange-500">
+                        <i class="fas fa-chevron-right text-2xl"></i>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="text-center group">
+                    <div
+                        class="w-20 h-20 bg-orange-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 group-hover:scale-110 transition duration-300">
+                        <i class="fas fa-check-circle text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Lắp Đặt & Bàn Giao</h3>
+                    <p class="text-gray-600">Lắp đặt tận nơi và bảo hành dài hạn</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Sản Phẩm Nổi Bật</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="group product-card">
+                    <div class="relative overflow-hidden rounded-lg">
+                        <img src="https://images.unsplash.com/photo-1672137233327-37b0c1049e77?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Tủ quần áo" class="product-image group-hover:scale-110 transition duration-300">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition duration-300">
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent text-white opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button
+                                class="bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition duration-300">
+                                Xem chi tiết
+                            </button>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mt-4">Tủ Quần Áo Nhựa</h3>
+                    <p class="text-gray-600">Thiết kế hiện đại, đa năng</p>
+                    <p class="text-orange-500 font-semibold mt-2">Giá từ: 5.000.000đ</p>
+                </div>
+                <!-- Product 2 -->
+                <div class="group product-card">
+                    <div class="relative overflow-hidden rounded-lg">
+                        <img src="https://plus.unsplash.com/premium_photo-1661963167025-ca61fd6b36d8?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Tủ bếp" class="product-image group-hover:scale-110 transition duration-300">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition duration-300">
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent text-white opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button
+                                class="bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition duration-300">
+                                Xem chi tiết
+                            </button>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mt-4">Tủ Bếp Nhựa</h3>
+                    <p class="text-gray-600">Chống ẩm, dễ vệ sinh</p>
+                    <p class="text-orange-500 font-semibold mt-2">Giá từ: 7.000.000đ</p>
+                </div>
+                <!-- Product 3 -->
+                <div class="group product-card">
+                    <div class="relative overflow-hidden rounded-lg">
+                        <img src="https://images.unsplash.com/photo-1618236444721-4a8dba415c15?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Tủ giày" class="product-image group-hover:scale-110 transition duration-300">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition duration-300">
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent text-white opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button
+                                class="bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition duration-300">
+                                Xem chi tiết
+                            </button>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mt-4">Tủ Giày Nhựa</h3>
+                    <p class="text-gray-600">Tiết kiệm không gian</p>
+                    <p class="text-orange-500 font-semibold mt-2">Giá từ: 3.000.000đ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-blue-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Bạn Đang Tìm Giải Pháp Tủ Nhựa?</h2>
+            <p class="text-xl mb-8">Đăng ký ngay để nhận tư vấn miễn phí và báo giá chi tiết</p>
+            <button
+                class="bg-orange-500 text-white px-8 py-4 rounded-full text-lg hover:bg-orange-600 transition duration-300 flex items-center mx-auto">
+                <i class="fas fa-calendar-check mr-2"></i>
+                Đăng ký tư vấn miễn phí
+            </button>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="testimonial-container">
+            <h2 class="text-3xl font-bold text-center mb-12">Khách Hàng Nói Gì Về Chúng Tôi</h2>
+
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="./image/khách hàng 1.jpg" alt="Khách hàng" class="testimonial-avatar"
+                            onerror="this.src='https://via.placeholder.com/80';">
+                        <div class="testimonial-info">
+                            <h3>Anh Trần Văn Huy</h3>
+                            <p>Cầu Giấy, Hà Nội</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        "Tôi rất hài lòng với bộ giường ngủ mua tại Nội Thất Chất Lượng Hà Nội. Chất lượng sản phẩm tốt,
+                        giá cả hợp
+                        lý và nhân viên tư vấn rất nhiệt tình. Sẽ tiếp tục ủng hộ cửa hàng trong thời gian tới."
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="./image/khách hàng 2.jpg" alt="Khách hàng" class="testimonial-avatar"
+                            onerror="this.src='https://via.placeholder.com/80';">
+                        <div class="testimonial-info">
+                            <h3>Chị Vũ Ngọc Lan</h3>
+                            <p>Mỹ Đình, Hà Nội</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        "Khá ưng với cách thiết kế theo yêu cầu của bên này, tư vấn rất tận tình. Sau 2 năm tôi thấy sản
+                        phẩm vẫn bền đẹp như
+                        mới. Màu sắc không bị phai, chất liệu chắc chắn. Đặc biệt là dễ vệ sinh và phù hợp với thời tiết
+                        Việt Nam."
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="./image/khách hàng 3.jpg" alt="Khách hàng" class="testimonial-avatar"
+                            onerror="this.src='https://via.placeholder.com/80';">
+                        <div class="testimonial-info">
+                            <h3>Chị Lê Thị Mai</h3>
+                            <p>Ý Yên, Nam Định</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        "Tôi đã mua nhiều sản phẩm nội thất nhựa tại Nội Thất Chất Lượng Hà Nội cho căn hộ của mình. Tất
+                        cả đều đẹp và
+                        chất lượng. Dịch vụ giao hàng nhanh chóng, lắp đặt chuyên nghiệp. Rất đáng để đầu tư."
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Dự Án Tiêu Biểu</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Khám phá những dự án nổi bật mà chúng tôi đã thực hiện cho
+                    khách hàng</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://plus.unsplash.com/premium_photo-1670360414483-64e6d9ba9038?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Dự án 1" class="w-full h-72 object-cover transition duration-300 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-semibold mb-2">Chung cư Green Park</h3>
+                            <p class="mb-4 text-gray-200">Thiết kế và thi công toàn bộ nội thất</p>
+                            <button
+                                class="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition duration-300">
+                                Xem chi tiết
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1539922980492-38f6673af8dd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Dự án 2" class="w-full h-72 object-cover transition duration-300 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-semibold mb-2">Biệt thự Vinhomes</h3>
+                            <p class="mb-4 text-gray-200">Thiết kế tủ bếp và phòng ngủ</p>
+                            <button
+                                class="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition duration-300">
+                                Xem chi tiết
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1593696140826-c58b021acf8b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Dự án 3" class="w-full h-72 object-cover transition duration-300 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-semibold mb-2">Nhà phố Cầu Giấy</h3>
+                            <p class="mb-4 text-gray-200">Thi công trọn gói nội thất</p>
+                            <button
+                                class="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition duration-300">
+                                Xem chi tiết
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View All Projects Button -->
+            <div class="text-center mt-12">
+                <button
+                    class="bg-white text-orange-500 border-2 border-orange-500 px-8 py-3 rounded-lg hover:bg-orange-500 hover:text-white transition duration-300">
+                    Xem tất cả dự án
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Câu Hỏi Thường Gặp</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Những thắc mắc phổ biến của khách hàng về sản phẩm và dịch vụ
+                </p>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-button">
+                        <span>Tủ nhựa có bền không?</span>
+                        <i class="fas fa-chevron-down text-orange-500"></i>
+                    </button>
+                    <div class="faq-content">
+                        <p class="text-gray-600">Tủ nhựa của chúng tôi được sản xuất từ chất liệu nhựa cao cấp, có độ
+                            bền cao và khả năng chống ẩm tốt. Sản phẩm được bảo hành 5 năm.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-button">
+                        <span>Thời gian thi công trung bình là bao lâu?</span>
+                        <i class="fas fa-chevron-down text-orange-500"></i>
+                    </button>
+                    <div class="faq-content">
+                        <p class="text-gray-600">Thời gian thi công trung bình từ 3-7 ngày tùy theo quy mô và độ phức
+                            tạp của công trình. Chúng tôi cam kết đúng tiến độ đã thỏa thuận.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-button">
+                        <span>Chi phí thiết kế và thi công như thế nào?</span>
+                        <i class="fas fa-chevron-down text-orange-500"></i>
+                    </button>
+                    <div class="faq-content">
+                        <p class="text-gray-600">Chi phí sẽ được báo giá cụ thể sau khi khảo sát thực tế. Chúng tôi cam
+                            kết mức giá cạnh tranh và phù hợp với chất lượng.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Tin Tức & Chia Sẻ</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Cập nhật những xu hướng mới nhất về thiết kế nội thất</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- News Item 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1611048268330-53de574cae3b?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Tin tức 1"
+                            class="w-full h-48 object-cover transition duration-300 group-hover:scale-110">
+                        <div class="absolute top-4 left-4 bg-orange-500 text-white px-3 py-1 rounded-full text-sm">
+                            Xu hướng
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-sm text-gray-500 mb-2">12 Tháng 3, 2024</div>
+                        <h3 class="text-xl font-semibold mb-2 group-hover:text-orange-500 transition duration-300">
+                            Xu hướng thiết kế tủ quần áo năm 2024
+                        </h3>
+                        <p class="text-gray-600 mb-4">Khám phá những xu hướng thiết kế tủ quần áo mới nhất và cách áp
+                            dụng vào không gian của bạn.</p>
+                        <a href="#" class="text-orange-500 hover:text-orange-600 font-medium inline-flex items-center">
+                            Đọc thêm
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- News Item 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1591924265219-1ea350ab7279?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Tin tức 2"
+                            class="w-full h-48 object-cover transition duration-300 group-hover:scale-110">
+                        <div class="absolute top-4 left-4 bg-orange-500 text-white px-3 py-1 rounded-full text-sm">
+                            Mẹo hay
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-sm text-gray-500 mb-2">10 Tháng 3, 2024</div>
+                        <h3 class="text-xl font-semibold mb-2 group-hover:text-orange-500 transition duration-300">
+                            5 cách sắp xếp tủ bếp thông minh
+                        </h3>
+                        <p class="text-gray-600 mb-4">Những mẹo hữu ích giúp bạn tối ưu không gian và sắp xếp tủ bếp một
+                            cách khoa học.</p>
+                        <a href="#" class="text-orange-500 hover:text-orange-600 font-medium inline-flex items-center">
+                            Đọc thêm
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- News Item 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1586024486164-ce9b3d87e09f?q=80&w=1956&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Tin tức 3"
+                            class="w-full h-48 object-cover transition duration-300 group-hover:scale-110">
+                        <div class="absolute top-4 left-4 bg-orange-500 text-white px-3 py-1 rounded-full text-sm">
+                            Chia sẻ
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-sm text-gray-500 mb-2">8 Tháng 3, 2024</div>
+                        <h3 class="text-xl font-semibold mb-2 group-hover:text-orange-500 transition duration-300">
+                            Cách chọn tủ phù hợp với không gian
+                        </h3>
+                        <p class="text-gray-600 mb-4">Những tiêu chí quan trọng cần cân nhắc khi lựa chọn tủ cho từng
+                            không gian sống.</p>
+                        <a href="#" class="text-orange-500 hover:text-orange-600 font-medium inline-flex items-center">
+                            Đọc thêm
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View All News Button -->
+            <div class="text-center mt-12">
+                <button
+                    class="bg-white text-orange-500 border-2 border-orange-500 px-8 py-3 rounded-lg hover:bg-orange-500 hover:text-white transition duration-300">
+                    Xem tất cả bài viết
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-b from-gray-900 to-gray-950 text-white py-16 relative overflow-hidden">
+        <!-- Decorative Elements -->
+        <div
+            class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-500 via-orange-400 to-orange-500 opacity-80">
+        </div>
+        <div class="absolute -top-24 -left-24 w-48 h-48 bg-orange-500 rounded-full opacity-5 blur-3xl"></div>
+        <div class="absolute -bottom-32 -right-32 w-64 h-64 bg-orange-500 rounded-full opacity-5 blur-3xl"></div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <!-- Top Footer -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Brand Column -->
+                <div class="space-y-6 sm:col-span-2 lg:col-span-1">
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-gradient-to-br from-orange-500 to-orange-600 p-2.5 rounded-lg shadow-lg">
+                            <i class="fas fa-couch text-2xl text-white"></i>
+                        </div>
+                        <h3
+                            class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-300">
+                            Nội Thất Chất Lượng Hà Nội</h3>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">Chuyên cung cấp các sản phẩm tủ nhựa cao cấp cho mọi không
+                        gian sống. Cam kết chất lượng và dịch vụ tốt nhất.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-icon group">
+                            <i class="fab fa-facebook-f group-hover:animate-pulse"></i>
+                        </a>
+                        <a href="#" class="social-icon group">
+                            <i class="fab fa-instagram group-hover:animate-pulse"></i>
+                        </a>
+                        <a href="#" class="social-icon group">
+                            <i class="fab fa-youtube group-hover:animate-pulse"></i>
+                        </a>
+                        <a href="#" class="social-icon group">
+                            <i class="fab fa-tiktok group-hover:animate-pulse"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="sm:col-span-1">
+                    <h3 class="text-xl font-bold mb-6 relative inline-block group">
+                        Liên Kết Nhanh
+                        <span
+                            class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-orange-500 to-orange-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                    </h3>
+                    <ul class="space-y-2">
+                        <li><a href="#"
+                                class="footer-link flex items-center p-1.5 hover:bg-gray-800/30 rounded transition-all duration-300"><i
+                                    class="fas fa-chevron-right text-orange-500 mr-2 text-xs"></i>Trang chủ</a></li>
+                        <li><a href="#"
+                                class="footer-link flex items-center p-1.5 hover:bg-gray-800/30 rounded transition-all duration-300"><i
+                                    class="fas fa-chevron-right text-orange-500 mr-2 text-xs"></i>Sản phẩm</a></li>
+                        <li><a href="#"
+                                class="footer-link flex items-center p-1.5 hover:bg-gray-800/30 rounded transition-all duration-300"><i
+                                    class="fas fa-chevron-right text-orange-500 mr-2 text-xs"></i>Bộ sưu tập</a></li>
+                        <li><a href="#"
+                                class="footer-link flex items-center p-1.5 hover:bg-gray-800/30 rounded transition-all duration-300"><i
+                                    class="fas fa-chevron-right text-orange-500 mr-2 text-xs"></i>Dự án tiêu biểu</a>
+                        </li>
+                        <li><a href="#"
+                                class="footer-link flex items-center p-1.5 hover:bg-gray-800/30 rounded transition-all duration-300"><i
+                                    class="fas fa-chevron-right text-orange-500 mr-2 text-xs"></i>Tin tức</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="sm:col-span-1">
+                    <h3 class="text-xl font-bold mb-6 relative inline-block group">
+                        Liên Hệ
+                        <span
+                            class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-orange-500 to-orange-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                    </h3>
+                    <ul class="space-y-3">
+                        <li
+                            class="flex items-center space-x-3 group hover:bg-gray-800/30 p-2.5 rounded-lg transition-all duration-300">
+                            <div
+                                class="bg-gray-800 p-2 rounded-full group-hover:bg-orange-500 transition-colors duration-300 flex-shrink-0">
+                                <i
+                                    class="fas fa-phone-alt text-orange-500 group-hover:text-white transition-colors duration-300"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-sm">Hotline</p>
+                                <a href="tel:0972774646"
+                                    class="text-white hover:text-orange-500 transition duration-300 font-medium">097.277.4646</a>
+                            </div>
+                        </li>
+                        <li
+                            class="flex items-center space-x-3 group hover:bg-gray-800/30 p-2.5 rounded-lg transition-all duration-300">
+                            <div
+                                class="bg-gray-800 p-2 rounded-full group-hover:bg-orange-500 transition-colors duration-300 flex-shrink-0">
+                                <i
+                                    class="fas fa-envelope text-orange-500 group-hover:text-white transition-colors duration-300"></i>
+                            </div>
+                            <div class="overflow-hidden">
+                                <p class="text-gray-400 text-sm">Email</p>
+                                <a href="mailto:info@noithatnhuahanoi.com"
+                                    class="text-white hover:text-orange-500 transition duration-300 font-medium truncate block">info@noithatnhuahanoi.com</a>
+                            </div>
+                        </li>
+                        <li
+                            class="flex items-center space-x-3 group hover:bg-gray-800/30 p-2.5 rounded-lg transition-all duration-300">
+                            <div
+                                class="bg-gray-800 p-2 rounded-full group-hover:bg-orange-500 transition-colors duration-300 flex-shrink-0">
+                                <i
+                                    class="fas fa-map-marker-alt text-orange-500 group-hover:text-white transition-colors duration-300"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-sm">Địa chỉ</p>
+                                <p class="text-white font-medium">Cầu Diễn, Nam Từ Liêm, Hà Nội</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Facebook Fanpage -->
+                <div class="relative sm:col-span-2 lg:col-span-1">
+                    <h3 class="text-xl font-bold mb-6 relative inline-block group">
+                        Fanpage Facebook
+                        <span
+                            class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-orange-500 to-orange-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                    </h3>
+                    <div
+                        class="bg-gray-800/50 p-4 rounded-xl shadow-inner overflow-hidden relative h-[300px] max-h-[350px] flex items-center justify-center">
+                        <div class="fb-page w-full" data-href="https://web.facebook.com/tunhuachatluong/"
+                            data-tabs="timeline" data-width="500" data-height="280" data-small-header="true"
+                            data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://web.facebook.com/tunhuachatluong/" class="fb-xfbml-parse-ignore">
+                                <a href="https://web.facebook.com/tunhuachatluong/">Nội Thất Chất Lượng Hà Nội</a>
+                            </blockquote>
+                        </div>
+                        <!-- Fallback for when Facebook plugin doesn't load -->
+                        <div id="fb-fallback"
+                            class="absolute inset-0 flex items-center justify-center bg-gray-800/80 backdrop-blur-sm hidden">
+                            <div class="text-center p-4">
+                                <i class="fab fa-facebook text-4xl text-blue-500 mb-3"></i>
+                                <p class="text-white mb-4">Kết nối với chúng tôi trên Facebook</p>
+                                <a href="https://web.facebook.com/tunhuachatluong/" target="_blank"
+                                    class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 inline-flex items-center">
+                                    <i class="fab fa-facebook-f mr-2"></i> Truy cập Fanpage
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                    <div class="text-center md:text-left order-2 md:order-1">
+                        <p class="text-gray-400">© 2024 Nội Thất Chất Lượng Hà Nội. All rights reserved.</p>
+                    </div>
+                    <div class="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-3 order-1 md:order-2">
+                        <a href="#"
+                            class="text-gray-400 hover:text-orange-500 transition duration-300 flex items-center px-2 py-1 hover:bg-gray-800/30 rounded">
+                            <i class="fas fa-shield-alt mr-2 text-orange-500 text-xs"></i> Chính sách bảo mật
+                        </a>
+                        <a href="#"
+                            class="text-gray-400 hover:text-orange-500 transition duration-300 flex items-center px-2 py-1 hover:bg-gray-800/30 rounded">
+                            <i class="fas fa-file-contract mr-2 text-orange-500 text-xs"></i> Điều khoản sử dụng
+                        </a>
+                        <a href="#"
+                            class="text-gray-400 hover:text-orange-500 transition duration-300 flex items-center px-2 py-1 hover:bg-gray-800/30 rounded">
+                            <i class="fas fa-sitemap mr-2 text-orange-500 text-xs"></i> Sitemap
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script to handle Facebook plugin fallback and counter animation -->
+    <script>
+        // Check if Facebook plugin loaded correctly
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                const fbPage = document.querySelector('.fb-page iframe');
+                const fbFallback = document.getElementById('fb-fallback');
+                if (!fbPage && fbFallback) {
+                    fbFallback.classList.remove('hidden');
+                }
+            }, 3000); // Check after 3 seconds
+
+            // Counter animation for statistics
+            const counterElements = document.querySelectorAll('.counter-value');
+
+            // Function to animate counter
+            function animateCounter(element, start, end, duration) {
+                let startTimestamp = null;
+                const step = (timestamp) => {
+                    if (!startTimestamp) startTimestamp = timestamp;
+                    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                    const currentCount = Math.floor(progress * (end - start) + start);
+                    element.textContent = currentCount;
+                    if (progress < 1) {
+                        window.requestAnimationFrame(step);
+                    }
+                };
+                window.requestAnimationFrame(step);
+            }
+
+            // Intersection Observer to trigger counter animation when visible
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const target = entry.target;
+                        const countTo = parseInt(target.getAttribute('data-count'));
+                        animateCounter(target, 0, countTo, 2000); // 2 seconds duration
+                        observer.unobserve(target); // Only animate once
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            // Observe all counter elements
+            counterElements.forEach(counter => {
+                observer.observe(counter);
+            });
+        });
+    </script>
+
+    <!-- Sticky CTA -->
+    <div class="fixed bottom-20 md:bottom-4 right-4 z-50">
+        <div class="flex flex-col items-end space-y-2">
+
+            <!-- Phone Button -->
+            <div class="relative">
+                <button id="contactButton" class="phone-button" aria-label="Liên hệ">
+                    <i class="fas fa-phone-alt"></i>
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <!-- Contact Popup -->
+                <div id="contactPopup" class="contact-popup">
+                    <div class="contact-popup-content">
+                        <h3 class="contact-popup-title">Liên hệ tư vấn</h3>
+
+                        <!-- Tư vấn viên qua điện thoại -->
+                        <div class="contact-section phone-section">
+                            <h4 class="section-title">
+                                <i class="fas fa-phone-alt text-orange-500 mr-2"></i> Tư vấn qua điện thoại
+                            </h4>
+
+                            <!-- Tư vấn viên 1 -->
+                            <div class="advisor-item">
+                                <div class="avatar-container">
+                                    <img src="./image/avartar gọi điện thoại.jpg" alt="Tư vấn viên"
+                                        class="advisor-avatar" onerror="this.src='https://via.placeholder.com/48';">
+                                    <span class="status-badge online"></span>
+                                </div>
+                                <div class="advisor-info">
+                                    <p class="advisor-name">Ms. Mai Anh</p>
+                                    <a href="tel:0987654321" class="advisor-contact phone-contact">
+                                        097.277.4646
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tư vấn viên qua Zalo -->
+                        <div class="contact-section zalo-section">
+                            <h4 class="section-title">
+                                <img src="./image/icons8-zalo-96.png" alt="Zalo" class="zalo-small-icon mr-2"
+                                    style="width: 20px; height: 20px;"> Tư vấn thiết kế 3D
+                            </h4>
+
+                            <!-- Zalo 2 -->
+                            <div class="advisor-item">
+                                <div class="avatar-container">
+                                    <img src="./image/avatar zalo.jpg" alt="Zalo" class="advisor-avatar"
+                                        onerror="this.src='https://via.placeholder.com/48';">
+                                    <span class="status-badge online"></span>
+                                </div>
+                                <div class="advisor-info">
+                                    <p class="advisor-name">Mr. Hoàng Hà</p>
+                                    <a href="https://zalo.me/0987654322" target="_blank"
+                                        class="advisor-contact zalo-contact">
+                                        083.4220.174
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav md:hidden">
+        <div class="bottom-nav-grid">
+            <a href="index.html" class="bottom-nav-item active" id="home-nav">
+                <i class="fas fa-home"></i>
+                <span>Trang chủ</span>
+            </a>
+            <a href="./sanpham.html" class="bottom-nav-item" id="products-nav">
+                <i class="fas fa-box"></i>
+                <span>Sản phẩm</span>
+            </a>
+            <a href="./bosuutap.html" class="bottom-nav-item" id="gallery-nav">
+                <i class="fas fa-images"></i>
+                <span>Bộ sưu tập</span>
+            </a>
+            <a href="./blog.html" class="bottom-nav-item" id="blog-nav">
+                <i class="fas fa-newspaper"></i>
+                <span>Blog</span>
+            </a>
+        </div>
+    </nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Mobile menu toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            if (mobileMenuButton) {
+                mobileMenuButton.addEventListener('click', function () {
+                    document.querySelector('.mobile-menu-content').classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const video = document.getElementById('hero-video');
+            const fallback = document.getElementById('video-fallback');
+
+            // Kiểm tra khả năng phát video
+            function checkVideoPlayback() {
+                const promise = video.play();
+
+                if (promise !== undefined) {
+                    promise.catch(error => {
+                        // Video không thể phát được
+                        video.style.display = 'none';
+                        fallback.classList.remove('hidden');
+                    }).then(() => {
+                        // Video có thể phát được
+                        video.style.display = 'block';
+                        fallback.classList.add('hidden');
+                    });
+                }
+            }
+
+            // Xử lý lỗi video
+            video.addEventListener('error', function () {
+                video.style.display = 'none';
+                fallback.classList.remove('hidden');
+            });
+
+            // Kiểm tra khi trang web load
+            checkVideoPlayback();
+
+            // Kiểm tra trên iOS
+            if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+                video.setAttribute('playsinline', '');
+                video.setAttribute('preload', 'metadata');
+            }
+        });
+    </script>
+</body>
+
+</html>

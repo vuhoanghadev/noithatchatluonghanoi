@@ -1,0 +1,2302 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo Giá AI - Nội Thất Chất Lượng Hà Nội</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Báo Giá AI - Nội Thất Chất Lượng Hà Nội">
+    <meta name="description"
+        content="Nhận báo giá tủ nhựa cao cấp tự động với AI. Giải pháp nội thất thông minh, hiện đại và phù hợp với không gian sống của người Việt Nam.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tunhuachatluonghanoi.vercel.app/baogiaAI.html">
+    <meta property="og:title" content="Báo Giá AI - Nội Thất Chất Lượng Hà Nội">
+    <meta property="og:description"
+        content="Nhận báo giá tủ nhựa cao cấp tự động với AI. Giải pháp nội thất thông minh, hiện đại và phù hợp với không gian sống của người Việt Nam.">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1667855766927-9d0c8fa1965a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <meta property="og:image:secure_url"
+        content="https://images.unsplash.com/photo-1667855766927-9d0c8fa1965a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Nội thất tủ nhựa cao cấp">
+    <meta property="og:site_name" content="Nội Thất Chất Lượng Hà Nội">
+    <meta property="fb:app_id" content="your-fb-app-id">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tunhuachatluonghanoi.vercel.app/baogiaAI.html">
+    <meta property="twitter:title" content="Báo Giá AI - Nội Thất Chất Lượng Hà Nội">
+    <meta property="twitter:description"
+        content="Nhận báo giá tủ nhựa cao cấp tự động với AI. Giải pháp nội thất thông minh, hiện đại và phù hợp với không gian sống của người Việt Nam.">
+    <meta property="twitter:image"
+        content="https://images.unsplash.com/photo-1667855766927-9d0c8fa1965a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <meta name="twitter:image:alt" content="Nội thất tủ nhựa cao cấp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./image/logo.svg">
+
+    <!-- Stylesheets -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Liên kết với file styles.css từ trang chính -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e5e7eb 100%);
+            scroll-behavior: smooth;
+            position: relative;
+            overflow-x: hidden;
+            -webkit-overflow-scrolling: touch;
+            /* Improves scrolling on iOS */
+        }
+
+        /* Đảm bảo padding-bottom của body giống với index.html */
+        @media (max-width: 768px) {
+            body {
+                padding-bottom: 60px !important;
+            }
+
+            /* Điều chỉnh chiều cao của header */
+            .header {
+                height: 70.8px !important;
+            }
+
+            .header-container {
+                height: 100% !important;
+                display: flex !important;
+                align-items: center !important;
+            }
+        }
+
+        /* Điều chỉnh responsive cho mobile */
+        @media (max-width: 768px) {
+
+            /* Điều chỉnh chiều cao của bottom-nav */
+            .bottom-nav {
+                height: 60px !important;
+            }
+
+            .bottom-nav-item {
+                padding: 0.5rem !important;
+            }
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            /* padding: 0 1rem; */
+        }
+
+        .ai-pricing-section {
+            position: relative;
+            padding: 3rem 0;
+            padding-top: 6rem;
+            /* Thêm padding-top để tránh bị header che phủ */
+        }
+
+        @media (min-width: 768px) {
+            .ai-pricing-section {
+                padding: 6rem 0;
+            }
+        }
+
+        .ai-pricing-card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        @media (min-width: 768px) {
+            .ai-pricing-card {
+                padding: 2.5rem;
+            }
+        }
+
+        .ai-pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 40px rgba(249, 115, 22, 0.2);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-input,
+        .form-select {
+            width: 100%;
+            padding: 0.875rem 1.25rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: #fff;
+        }
+
+        .form-input:focus,
+        .form-select:focus {
+            outline: none;
+            border-color: #f97316;
+            box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.15);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #f97316, #ea580c);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 10px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(249, 115, 22, 0.4);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #f97316;
+            border: 2px solid #f97316;
+            padding: 0.75rem 1.5rem;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: #f97316;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .result-card {
+            background: white;
+            border-radius: 16px;
+            padding: 1.25rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            display: none;
+            animation: slideUp 0.5s ease-out;
+            width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            .result-card {
+                padding: 2.5rem;
+            }
+        }
+
+        /* Responsive adjustments for small phones */
+        @media (max-width: 360px) {
+            .result-card {
+                padding: 1rem;
+            }
+        }
+
+        .price-display {
+            font-size: 1.75rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #f97316, #ea580c);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin: 0.5rem 0;
+            line-height: 1.2;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .price-display {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .price-display {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Add styles for the result buttons */
+        .result-card .btn-primary,
+        .result-card .btn-secondary {
+            padding: 0.75rem 1rem;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .result-card .btn-primary {
+            box-shadow: 0 4px 10px rgba(249, 115, 22, 0.3);
+        }
+
+        @media (max-width: 640px) {
+
+            .result-card .btn-primary,
+            .result-card .btn-secondary {
+                padding: 0.6rem 0.75rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 360px) {
+
+            .result-card .btn-primary,
+            .result-card .btn-secondary {
+                padding: 0.5rem 0.5rem;
+                font-size: 0.85rem;
+            }
+
+            .result-card .btn-primary i,
+            .result-card .btn-secondary i {
+                font-size: 0.85rem;
+            }
+        }
+
+        /* Optimize product info section */
+        .result-card .bg-orange-100.p-2 {
+            padding: 0.5rem;
+        }
+
+        .result-card .text-xl {
+            font-size: 1.1rem;
+        }
+
+        @media (min-width: 768px) {
+            .result-card .bg-orange-100.p-2 {
+                padding: 0.75rem;
+            }
+
+            .result-card .text-xl {
+                font-size: 1.25rem;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .result-card .bg-orange-100.p-2 {
+                padding: 0.4rem;
+            }
+
+            .result-card .text-xl {
+                font-size: 1rem;
+            }
+
+            .result-card .gap-3 {
+                gap: 0.5rem;
+            }
+        }
+
+        /* Optimize grid layout for small screens */
+        @media (max-width: 360px) {
+            .result-card .grid.gap-6 {
+                gap: 1rem;
+            }
+
+            .result-card .p-6 {
+                padding: 0.75rem;
+            }
+        }
+
+        /* Optimize price details section */
+        .result-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        @media (min-width: 768px) {
+            .result-card h3 {
+                font-size: 1.25rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .result-card h3 {
+                font-size: 1rem;
+            }
+
+            .result-card h3 i {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Price comparison section */
+        .result-card .text-gray-600.text-sm {
+            font-size: 0.8rem;
+        }
+
+        .result-card .font-medium {
+            font-size: 0.9rem;
+        }
+
+        @media (min-width: 768px) {
+            .result-card .text-gray-600.text-sm {
+                font-size: 0.875rem;
+            }
+
+            .result-card .font-medium {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .result-card .text-gray-600.text-sm {
+                font-size: 0.75rem;
+            }
+
+            .result-card .font-medium {
+                font-size: 0.85rem;
+            }
+
+            .result-card .w-3.h-3 {
+                width: 0.5rem;
+                height: 0.5rem;
+            }
+        }
+
+        /* Redesigned Progress Bar */
+        .progress-bar {
+            height: 10px;
+            /* Slightly taller for better visibility on mobile */
+            background: #e5e7eb;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+            margin-bottom: 6px;
+            /* Add margin to separate from steps */
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #f97316, #ea580c);
+            width: 0;
+            border-radius: 10px;
+            position: relative;
+            transition: width 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .progress-fill::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg,
+                    rgba(255, 255, 255, 0) 0%,
+                    rgba(255, 255, 255, 0.4) 50%,
+                    rgba(255, 255, 255, 0) 100%);
+            animation: shimmer 1.5s infinite;
+            background-size: 200% 100%;
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: -200% 0;
+            }
+
+            100% {
+                background-position: 200% 0;
+            }
+        }
+
+        .progress-steps {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            padding: 2px 0;
+            /* Add padding for better touch targets on mobile */
+        }
+
+        .progress-step {
+            width: 8px;
+            /* Slightly larger for better visibility */
+            height: 8px;
+            background: #e5e7eb;
+            border-radius: 50%;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            z-index: 2;
+        }
+
+        /* Responsive adjustments for progress steps */
+        @media (max-width: 768px) {
+            .progress-step {
+                width: 10px;
+                /* Even larger on mobile */
+                height: 10px;
+            }
+
+            /* Add a mobile-friendly current step indicator */
+            .progress-current-step {
+                text-align: center;
+                font-size: 0.75rem;
+                color: #f97316;
+                margin-top: 0.5rem;
+                font-weight: 500;
+                height: 1rem;
+                /* Fixed height to prevent layout shifts */
+            }
+        }
+
+        .progress-step.active {
+            background: #f97316;
+            transform: scale(1.2);
+        }
+
+        .progress-label {
+            position: absolute;
+            top: 0;
+            font-size: 9px;
+            color: #9ca3af;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            text-align: center;
+        }
+
+        .progress-label.active {
+            opacity: 1;
+            color: #f97316;
+            font-weight: 600;
+        }
+
+        /* Fix for progress labels container */
+        .progress-labels-container {
+            position: relative;
+            height: 20px;
+            /* Add height to contain absolute positioned labels */
+            margin-top: 4px;
+            width: 100%;
+            /* Ensure full width */
+        }
+
+        .history-item {
+            padding: 1rem;
+            border-bottom: 1px solid #e5e7eb;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .history-item:hover {
+            background: #f3f4f6;
+        }
+
+        .selected-history-item {
+            background: #fff0e6 !important;
+            border-left: 4px solid #f97316;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(249, 115, 22, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        /* Particle Animation */
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(249, 115, 22, 0.2);
+            pointer-events: none;
+        }
+
+        .particle-1 {
+            width: 80px;
+            height: 80px;
+            left: 10%;
+            top: 20%;
+            animation: float 15s ease-in-out infinite;
+            opacity: 0.4;
+        }
+
+        .particle-2 {
+            width: 60px;
+            height: 60px;
+            right: 15%;
+            top: 30%;
+            animation: float 18s ease-in-out infinite reverse;
+            opacity: 0.3;
+        }
+
+        .particle-3 {
+            width: 40px;
+            height: 40px;
+            left: 20%;
+            bottom: 20%;
+            animation: float 12s ease-in-out infinite 2s;
+            opacity: 0.2;
+        }
+
+        .particle-4 {
+            width: 100px;
+            height: 100px;
+            right: 5%;
+            bottom: 10%;
+            animation: float 20s ease-in-out infinite 1s;
+            opacity: 0.15;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px) translateX(0px);
+            }
+
+            25% {
+                transform: translateY(-20px) translateX(10px);
+            }
+
+            50% {
+                transform: translateY(0px) translateX(20px);
+            }
+
+            75% {
+                transform: translateY(20px) translateX(10px);
+            }
+
+            100% {
+                transform: translateY(0px) translateX(0px);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Scroll indicator animation */
+        @keyframes scrollIndicator {
+            0% {
+                opacity: 0;
+                transform: translateY(0);
+            }
+
+            50% {
+                opacity: 1;
+                transform: translateY(10px);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+        }
+
+        .scroll-indicator {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 40px;
+            background-color: rgba(249, 115, 22, 0.9);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            z-index: 100;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .scroll-indicator.active {
+            opacity: 1;
+            animation: scrollIndicator 1.5s ease-in-out infinite;
+        }
+
+        /* Highlight animation for sections */
+        @keyframes highlightPulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.4);
+            }
+
+            70% {
+                box-shadow: 0 0 0 10px rgba(249, 115, 22, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(249, 115, 22, 0);
+            }
+        }
+
+        .highlight-section {
+            animation: highlightPulse 1.5s ease-out;
+        }
+
+        /* Pulse animation for result card */
+        @keyframes pulseFade {
+            0% {
+                opacity: 0.7;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0.7;
+            }
+        }
+
+        .pulse-animation {
+            animation: pulseFade 1.5s ease-in-out;
+        }
+
+        /* Notification Box Styles */
+        .notification-box {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            max-width: 400px;
+            width: 90%;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            will-change: opacity;
+            /* Optimize for animations */
+        }
+
+        .notification-box.show {
+            opacity: 1;
+            display: block;
+        }
+
+        .notification-box h3 {
+            color: #1f2937;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .notification-box p {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .notification-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: flex-end;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translate(-50%, -45%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .notification-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+            will-change: opacity, visibility;
+        }
+
+        .notification-overlay.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Disclaimer Styles */
+        .disclaimer-box {
+            background: #fff3e6;
+            border-left: 4px solid #f97316;
+            padding: 1.25rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            box-shadow: 0 2px 10px rgba(249, 115, 22, 0.1);
+        }
+
+        .disclaimer-box strong {
+            color: #f97316;
+            font-size: 1rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .disclaimer-box p {
+            margin: 0;
+            text-align: justify;
+        }
+
+        .disclaimer-box .mt-2 {
+            margin-top: 0.75rem;
+        }
+
+        .disclaimer-box a {
+            font-weight: 600;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        @media (max-width: 768px) {
+
+            .ai-pricing-card,
+            .result-card {
+                padding: 1.5rem;
+            }
+
+            .price-display {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+    <!-- tiện ích facebook  -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v22.0"></script>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <!-- Logo -->
+            <a href="./index.html" class="logo-container">
+                <div class="logo-icon">
+                    <img src="./image/logo.svg" alt="" srcset="">
+                </div>
+                <div class="logo-text">
+                    <h1>Nội Thất Chất Lượng Hà Nội</h1>
+                    <p>Giải pháp tủ nhựa cao cấp</p>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center desktop-nav">
+                <a href="./index.html" class="nav-link">
+                    <span>Trang chủ</span>
+                    <span class="nav-link-underline"></span>
+                </a>
+                <a href="./sanpham.html" class="nav-link">
+                    <span>Sản phẩm</span>
+                    <span class="nav-link-underline"></span>
+                </a>
+                <a href="./bosuutap.html" class="nav-link">
+                    <span>Bộ sưu tập</span>
+                    <span class="nav-link-underline"></span>
+                </a>
+                <a href="./blog.html" class="nav-link">
+                    <span>Blog</span>
+                    <span class="nav-link-underline"></span>
+                </a>
+                <a href="./baogiaAI.html" class="nav-link active">
+                    <span>Báo giá</span>
+                    <span class="nav-link-underline"></span>
+                </a>
+                <button class="cta-button">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Tư vấn miễn phí</span>
+                    <span class="cta-button-underline"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-toggle" class="mobile-menu-toggle md:hidden">
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+            </button>
+        </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="mobile-menu-inner" style="background-color: snow;">
+                <div class="mobile-menu-header" style="height: 95px;">
+                    <a href="#" class="logo-container mobile-logo-container">
+                        <div class="logo-icon mobile-logo-icon">
+                            <img src="./image/logo.svg" alt="" srcset="">
+                        </div>
+                        <div class="logo-text mobile-logo-text">
+                            <h1>Nội Thất Chất Lượng Hà Nội</h1>
+                            <p>Giải pháp tủ nhựa cao cấp</p>
+                        </div>
+                    </a>
+                    <button id="mobile-menu-close" class="mobile-menu-toggle">
+                        <span class="toggle-bar"></span>
+                        <span class="toggle-bar"></span>
+                        <span class="toggle-bar"></span>
+                    </button>
+                </div>
+
+
+
+                <h3 class="category-title">Danh mục sản phẩm</h3>
+
+                <div class="product-categories">
+                    <a href="#" class="category-box">
+                        <div class="category-image">
+                            <img src="./image/icon tủ quần áo.png" alt="Tủ quần áo">
+                        </div>
+                        <div class="category-name">Tủ quần áo</div>
+                    </a>
+
+                    <a href="#" class="category-box">
+                        <div class="category-image">
+                            <img src="./image/icon tủ bếp.png" alt="Tủ bếp">
+                        </div>
+                        <div class="category-name">Tủ bếp</div>
+                    </a>
+
+                    <a href="#" class="category-box">
+                        <div class="category-image">
+                            <img src="./image/icon bàn làm việc.png" alt="Tủ bàn học">
+                        </div>
+                        <div class="category-name">Bàn làm việc</div>
+                    </a>
+
+                    <a href="#" class="category-box">
+                        <div class="category-image">
+                            <img src="./image/icon bàn học.png" alt="Bàn học">
+                        </div>
+                        <div class="category-name">Bàn Học</div>
+                    </a>
+
+                    <a href="#" class="category-box">
+                        <div class="category-image">
+                            <img src="./image/icon tủ giày.png" alt="Tủ giày">
+                        </div>
+                        <div class="category-name">Tủ giày</div>
+                    </a>
+
+                    <a href="#" class="category-box">
+                        <div class="category-image">
+                            <img src="./image/icon tủ sách.png" alt="Tủ sách">
+                        </div>
+                        <div class="category-name">Tủ sách</div>
+                    </a>
+
+                    <a href="#" class="category-box">
+                        <div class="category-image">
+                            <img src="./image/icon giường ngủ.png" alt="Giường ngủ">
+                        </div>
+                        <div class="category-name">Giường ngủ</div>
+                    </a>
+
+                </div>
+
+                <div class="mobile-menu-divider"></div>
+
+                <div class="quick-links">
+                    <h3 class="quick-links-title">Truy cập nhanh</h3>
+                    <div class="quick-links-grid">
+                        <a href="#" class="quick-link-item">
+                            <i class="fas fa-home"></i>
+                            <span>Trang chủ</span>
+                        </a>
+                        <a href="#" class="quick-link-item">
+                            <i class="fas fa-images"></i>
+                            <span>Bộ sưu tập</span>
+                        </a>
+                        <a href="#" class="quick-link-item">
+                            <i class="fas fa-newspaper"></i>
+                            <span>Tin tức</span>
+                        </a>
+                        <a href="#" class="quick-link-item">
+                            <i class="fas fa-phone"></i>
+                            <span>Liên hệ</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mobile-menu-divider"></div>
+
+                <div class="mobile-cta">
+                    <button class="mobile-cta-button">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Tư vấn miễn phí</span>
+                    </button>
+                </div>
+
+                <div class="mobile-contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Hotline: <a href="tel:0972774646">097.277.4646</a></span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email: <a href="mailto:info@noithatnhuahanoi.com">info@noithatnhuahanoi.com</a></span>
+                    </div>
+                </div>
+
+                <div class="mobile-social">
+                    <a href="#" class="mobile-social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="mobile-social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="mobile-social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="mobile-social-icon"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="mobile-menu-inner" style="background-color: snow;">
+            <div class="mobile-menu-header" style="height: 95px;">
+                <a href="#" class="logo-container mobile-logo-container">
+                    <div class="logo-icon mobile-logo-icon">
+                        <img src="./image/logo.svg" alt="" srcset="">
+                    </div>
+                    <div class="logo-text mobile-logo-text">
+                        <h1>Nội Thất Chất Lượng Hà Nội</h1>
+                        <p>Giải pháp tủ nhựa cao cấp</p>
+                    </div>
+                </a>
+                <button id="mobile-menu-close" class="mobile-menu-toggle">
+                    <span class="toggle-bar"></span>
+                    <span class="toggle-bar"></span>
+                    <span class="toggle-bar"></span>
+                </button>
+            </div>
+
+            <div class="mobile-menu-search">
+                <div class="search-box">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                    <button style="background-color: white;"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+
+            <h3 class="category-title">Danh mục sản phẩm</h3>
+
+            <div class="product-categories">
+                <a href="#" class="category-box">
+                    <div class="category-image">
+                        <img src="./image/icon tủ quần áo.png" alt="Tủ quần áo">
+                    </div>
+                    <div class="category-name">Tủ quần áo</div>
+                </a>
+
+                <a href="#" class="category-box">
+                    <div class="category-image">
+                        <img src="./image/icon tủ bếp.png" alt="Tủ bếp">
+                    </div>
+                    <div class="category-name">Tủ bếp</div>
+                </a>
+
+                <a href="#" class="category-box">
+                    <div class="category-image">
+                        <img src="./image/icon tủ bàn học.png" alt="Tủ bàn học">
+                    </div>
+                    <div class="category-name">Tủ bàn học</div>
+                </a>
+
+                <a href="#" class="category-box">
+                    <div class="category-image">
+                        <img src="./image/icon tủ giày.png" alt="Tủ giày">
+                    </div>
+                    <div class="category-name">Tủ giày</div>
+                </a>
+
+                <a href="#" class="category-box">
+                    <div class="category-image">
+                        <img src="./image/icon tủ sách.png" alt="Tủ sách">
+                    </div>
+                    <div class="category-name">Tủ sách</div>
+                </a>
+
+                <a href="#" class="category-box">
+                    <div class="category-image">
+                        <img src="./image/working.png" alt="Giường ngủ">
+                    </div>
+                    <div class="category-name">Giường ngủ</div>
+                </a>
+            </div>
+
+            <div class="mobile-menu-divider"></div>
+
+            <div class="quick-links">
+                <h3 class="quick-links-title">Truy cập nhanh</h3>
+                <div class="quick-links-grid">
+                    <a href="#" class="quick-link-item">
+                        <i class="fas fa-home"></i>
+                        <span>Trang chủ</span>
+                    </a>
+                    <a href="#" class="quick-link-item">
+                        <i class="fas fa-images"></i>
+                        <span>Bộ sưu tập</span>
+                    </a>
+                    <a href="#" class="quick-link-item">
+                        <i class="fas fa-newspaper"></i>
+                        <span>Tin tức</span>
+                    </a>
+                    <a href="#" class="quick-link-item">
+                        <i class="fas fa-phone"></i>
+                        <span>Liên hệ</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mobile-menu-divider"></div>
+
+            <div class="mobile-cta">
+                <button class="mobile-cta-button">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Tư vấn miễn phí</span>
+                </button>
+            </div>
+
+            <div class="mobile-contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Hotline: <a href="tel:0972774646">097.277.4646</a></span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email: <a href="mailto:info@noithatnhuahanoi.com">info@noithatnhuahanoi.com</a></span>
+                </div>
+            </div>
+
+            <div class="mobile-social">
+                <a href="#" class="mobile-social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="mobile-social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="mobile-social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="mobile-social-icon"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="ai-pricing-section">
+        <div class="container">
+            <div class="text-center mb-12 pt-16 md:pt-0">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-700">Báo Giá
+                        AI</span> Thông Minh
+                </h1>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Nhận báo giá chính xác, nhanh chóng chỉ trong vài
+                    giây với công nghệ AI tiên tiến.</p>
+            </div>
+
+            <!-- Notification Boxes -->
+            <div id="notificationOverlay" class="notification-overlay"></div>
+
+            <!-- Scroll Indicator -->
+            <div id="scrollIndicator" class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+
+            <!-- Size Suggestion Notification -->
+            <div id="sizeNotification" class="notification-box">
+                <h3>Gợi Ý Kích Thước</h3>
+                <p id="sizeSuggestionText">Kích thước gợi ý sẽ được hiển thị ở đây</p>
+                <div class="notification-buttons">
+                    <button class="btn-secondary" onclick="hideNotification('sizeNotification')">Hủy</button>
+                    <button class="btn-primary" onclick="applySuggestedSize()">Áp dụng</button>
+                </div>
+            </div>
+
+            <!-- Product Type Required Notification -->
+            <div id="productTypeNotification" class="notification-box">
+                <h3>Thông Báo</h3>
+                <p>Vui lòng chọn loại sản phẩm trước khi gợi ý kích thước!</p>
+                <div class="notification-buttons">
+                    <button class="btn-primary" onclick="hideNotification('productTypeNotification')">Đã hiểu</button>
+                </div>
+            </div>
+
+            <!-- Selected Quote Notification has been removed -->
+
+            <!-- Clear History Notification -->
+            <div id="clearHistoryNotification" class="notification-box">
+                <h3>Xác Nhận Xóa</h3>
+                <p>Bạn có chắc chắn muốn xóa toàn bộ lịch sử báo giá không? Hành động này không thể hoàn tác.</p>
+                <div class="notification-buttons">
+                    <button class="btn-secondary" onclick="hideNotification('clearHistoryNotification')">Hủy</button>
+                    <button class="btn-primary" onclick="confirmClearHistory()">Xóa</button>
+                </div>
+            </div>
+
+            <div class="w-full max-w-7xl mx-auto px-4 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Form Section -->
+                    <div class="ai-pricing-card lg:col-span-2">
+                        <h2 class="text-2xl font-semibold mb-6 text-gray-900">Tùy Chọn Sản Phẩm</h2>
+                        <form id="pricingForm">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="form-group">
+                                    <label for="productType" class="form-label">Loại sản phẩm</label>
+                                    <select id="productType" class="form-select" required>
+                                        <option value="">Chọn loại sản phẩm</option>
+                                        <option value="wardrobe">Tủ quần áo</option>
+                                        <option value="kitchen">Tủ bếp</option>
+                                        <option value="shoe">Tủ giày</option>
+                                        <option value="study">Tủ bàn học</option>
+                                        <option value="book">Tủ sách</option>
+                                        <option value="bed">Giường ngủ</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="material" class="form-label">Chất liệu</label>
+                                    <select id="material" class="form-select" required>
+                                        <option value="">Chọn chất liệu</option>
+                                        <option value="standard">Nhựa tiêu chuẩn</option>
+                                        <option value="premium">Nhựa cao cấp</option>
+                                        <option value="luxury">Nhựa siêu bền</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="width" class="form-label">Chiều rộng (m)</label>
+                                    <input type="number" id="width" class="form-input" step="0.1" min="0.5" max="10"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="height" class="form-label">Chiều cao (m)</label>
+                                    <input type="number" id="height" class="form-input" step="0.1" min="0.5" max="3"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="depth" class="form-label">Chiều sâu (m)</label>
+                                    <input type="number" id="depth" class="form-input" step="0.1" min="0.3" max="1"
+                                        required>
+                                </div>
+                                <div class="form-group flex items-end">
+                                    <button type="button" id="suggestSize" class="btn-secondary w-full">Gợi ý kích
+                                        thước</button>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn-primary mt-6 w-full md:w-auto">
+                                <i class="fas fa-robot mr-2"></i>
+                                Tính Giá Ngay
+                            </button>
+                        </form>
+                        <div class="disclaimer-box">
+                            <strong>Lưu ý quan trọng</strong>
+                            <p>Báo giá từ hệ thống AI của chúng tôi chỉ mang tính chất tham khảo, dựa trên các tiêu
+                                chuẩn giá thị trường hiện hành. Giá cuối cùng có thể thay đổi tùy theo yêu cầu cụ thể
+                                của dự án và điều kiện lắp đặt tại hiện trường.</p>
+                            <p class="mt-2">Để đảm bảo quý khách nhận được báo giá chính xác và minh bạch nhất, xin vui
+                                lòng liên hệ trực tiếp với đội ngũ tư vấn chuyên nghiệp qua hotline <a
+                                    href="tel:0972774646"
+                                    class="text-orange-500 hover:text-orange-600">097.277.4646</a>. Chúng tôi cam kết
+                                mang đến giải pháp tối ưu và sự an tâm về giá cả cho quý khách.</p>
+                        </div>
+                    </div>
+
+                    <!-- History Section -->
+                    <div id="historySection" class="ai-pricing-card">
+                        <div class="flex justify-between items-center mb-6">
+                            <h2 class="text-2xl font-semibold text-gray-900">Lịch Sử Báo Giá</h2>
+                            <button id="clearHistory" class="btn-secondary text-sm px-3 py-1">Xóa tất cả</button>
+                        </div>
+                        <div id="historyList" class="max-h-96 overflow-y-auto">
+                            <p class="text-gray-600 text-center">Chưa có báo giá nào</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Result Section -->
+                <div class="result-card mt-8" id="resultCard">
+                    <!-- Responsive header for Result Card -->
+                    <div class="mb-6">
+                        <!-- Title and Progress Bar - Stacked on mobile, side by side on desktop -->
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-0">Kết Quả Báo Giá</h2>
+
+                            <!-- Progress bar container - Full width on mobile, fixed width on desktop -->
+                            <div class="flex flex-col w-full md:w-48">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" id="progressFill"></div>
+                                </div>
+                                <div class="progress-steps">
+                                    <div class="progress-step" id="step1"></div>
+                                    <div class="progress-step" id="step2"></div>
+                                    <div class="progress-step" id="step3"></div>
+                                    <div class="progress-step" id="step4"></div>
+                                    <div class="progress-step" id="step5"></div>
+                                </div>
+
+                                <!-- Progress Labels - Hidden on mobile, visible on desktop -->
+                                <div class="hidden md:block progress-labels-container">
+                                    <div class="progress-label" style="left: 0%">Đọc dữ liệu</div>
+                                    <div class="progress-label" style="left: 25%">Tính toán</div>
+                                    <div class="progress-label" style="left: 50%">Phân tích</div>
+                                    <div class="progress-label" style="left: 75%">So sánh</div>
+                                    <div class="progress-label" style="left: 100%">Hoàn thành</div>
+                                </div>
+
+                                <!-- Mobile-only current step indicator -->
+                                <div class="progress-current-step md:hidden" id="progressCurrentStep"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                        <!-- Product Info Card -->
+                        <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-orange-500">
+                            <h3 class="text-lg font-semibold mb-4 text-gray-900 flex items-center">
+                                <i class="fas fa-info-circle text-orange-500 mr-2"></i>
+                                Thông Tin Sản Phẩm
+                            </h3>
+                            <div class="space-y-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="bg-orange-100 p-2 rounded-full">
+                                        <i class="fas fa-couch text-orange-500 text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-600 text-sm">Sản phẩm</p>
+                                        <p id="resultProduct" class="font-semibold text-gray-900">-</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="bg-orange-100 p-2 rounded-full">
+                                        <i class="fas fa-ruler-combined text-orange-500 text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-600 text-sm">Kích thước</p>
+                                        <p id="resultSize" class="font-semibold text-gray-900">-</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="bg-orange-100 p-2 rounded-full">
+                                        <i class="fas fa-layer-group text-orange-500 text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-600 text-sm">Chất liệu</p>
+                                        <p id="resultMaterial" class="font-semibold text-gray-900">-</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Price Card -->
+                        <div
+                            class="bg-gradient-to-br from-orange-50 to-white rounded-xl shadow-md p-6 border border-orange-100 lg:col-span-2">
+                            <h3 class="text-lg font-semibold mb-4 text-gray-900 flex items-center">
+                                <i class="fas fa-tag text-orange-500 mr-2"></i>
+                                Chi Tiết Giá
+                            </h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div
+                                    class="flex flex-col justify-center items-center bg-white p-6 rounded-lg shadow-sm">
+                                    <p class="text-gray-600 text-sm mb-2">Tổng giá ước tính</p>
+                                    <p id="resultPrice" class="price-display mb-1">-</p>
+                                    <p class="text-xs text-gray-500">*Đã bao gồm phí lắp đặt 499.000đ</p>
+                                </div>
+
+                                <div class="bg-white p-6 rounded-lg shadow-sm">
+                                    <h4 class="text-md font-semibold mb-3 text-gray-900 flex items-center">
+                                        <i class="fas fa-balance-scale text-orange-400 mr-2"></i>
+                                        So sánh giá theo chất liệu
+                                    </h4>
+                                    <div class="space-y-3">
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-gray-600 text-sm flex items-center">
+                                                <span
+                                                    class="w-3 h-3 bg-green-200 rounded-full inline-block mr-2"></span>
+                                                Nhựa tiêu chuẩn
+                                            </span>
+                                            <span id="standardPrice" class="font-medium">-</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-gray-600 text-sm flex items-center">
+                                                <span class="w-3 h-3 bg-blue-200 rounded-full inline-block mr-2"></span>
+                                                Nhựa cao cấp
+                                            </span>
+                                            <span id="premiumPrice" class="font-medium">-</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-gray-600 text-sm flex items-center">
+                                                <span
+                                                    class="w-3 h-3 bg-purple-200 rounded-full inline-block mr-2"></span>
+                                                Nhựa siêu bền
+                                            </span>
+                                            <span id="luxuryPrice" class="font-medium">-</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
+                                <button class="btn-primary flex-1" onclick="window.location.href='tel:0987654321'">
+                                    <i class="fas fa-phone-alt mr-2"></i>
+                                    Liên Hệ Đặt Hàng
+                                </button>
+                                <button class="btn-secondary flex-1" onclick="window.location.href='index.html'">
+                                    <i class="fas fa-arrow-left mr-2"></i>
+                                    Quay Về Trang Chủ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Why Choose Us - Redesigned for more authentic feel -->
+                <div class="mt-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900 text-center">Khách Hàng Chọn Chúng Tôi Vì</h2>
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+                        <!-- Customer Testimonial Section -->
+                        <div class="p-6 bg-gradient-to-r from-orange-50 to-white border-b border-gray-100">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-quote-left text-orange-500 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-900">Phản hồi từ khách hàng</h3>
+                                    <p class="text-sm text-gray-500">Chị Nguyễn Thị Hương - Quận Cầu Giấy</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 italic mb-4">"Tôi đã đặt tủ quần áo cho gia đình và rất hài lòng với
+                                chất lượng sản phẩm. Đội ngũ thi công chuyên nghiệp, sạch sẽ và đúng hẹn. Giá thành hợp
+                                lý so với chất lượng nhận được."</p>
+                        </div>
+
+                        <!-- Benefits Grid -->
+                        <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-100">
+                            <!-- Benefit 1: Quality -->
+                            <div class="p-6 flex items-start">
+                                <div class="mr-4 mt-1">
+                                    <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-medal text-green-600"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold mb-2 text-gray-900">Chất Lượng Đảm Bảo</h3>
+                                    <p class="text-gray-600 text-sm">Sản phẩm được sản xuất từ nhựa cao cấp, chịu lực
+                                        tốt, không cong vênh. Bảo hành chính hãng lên đến 5 năm.</p>
+                                    <div class="mt-3 flex items-center">
+                                        <span class="text-amber-500">★★★★★</span>
+                                        <span class="text-xs text-gray-500 ml-2">4.9/5 (128 đánh giá)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Benefit 2: Price -->
+                            <div class="p-6 flex items-start">
+                                <div class="mr-4 mt-1">
+                                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-tags text-blue-600"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold mb-2 text-gray-900">Giá Cả Hợp Lý</h3>
+                                    <p class="text-gray-600 text-sm">Báo giá minh bạch, không phát sinh chi phí. Tư vấn
+                                        thiết kế miễn phí giúp tối ưu không gian và ngân sách.</p>
+                                    <div
+                                        class="mt-3 bg-orange-100 text-orange-700 text-xs font-medium px-2 py-1 rounded inline-flex items-center">
+                                        <i class="fas fa-percent mr-1"></i> Ưu đãi đặc biệt tháng này
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Benefit 3: Service -->
+                            <div class="p-6 flex items-start">
+                                <div class="mr-4 mt-1">
+                                    <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-hands-helping text-purple-600"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold mb-2 text-gray-900">Dịch Vụ Tận Tâm</h3>
+                                    <p class="text-gray-600 text-sm">Đội ngũ thi công lành nghề, tư vấn nhiệt tình. Hỗ
+                                        trợ kỹ thuật 24/7 và dịch vụ bảo trì định kỳ miễn phí.</p>
+                                    <div class="mt-3 flex items-center text-sm">
+                                        <i class="fas fa-clock text-gray-400 mr-1"></i>
+                                        <span class="text-gray-500">Hoàn thành trong 3-5 ngày</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Call to Action -->
+                        <div class="p-6 bg-gray-50 border-t border-gray-100 text-center">
+                            <p class="text-gray-700 mb-4">Hơn 1000+ khách hàng hài lòng tại Hà Nội và các tỉnh lân cận
+                            </p>
+                            <a href="tel:0987654321"
+                                class="inline-flex items-center justify-center px-6 py-3 bg-orange-500 text-white font-medium rounded-lg hover:bg-orange-600 transition-colors">
+                                <i class="fas fa-phone-alt mr-2"></i>
+                                Gọi ngay để được tư vấn miễn phí
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Particles -->
+            <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                <div class="particle particle-1"></div>
+                <div class="particle particle-2"></div>
+                <div class="particle particle-3"></div>
+                <div class="particle particle-4"></div>
+            </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-4">
+            <!-- Top Footer -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <!-- Brand Column -->
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-couch text-3xl text-orange-500"></i>
+                        <h3 class="text-2xl font-bold">Nội Thất Chất Lượng Hà Nội</h3>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">Chuyên cung cấp các sản phẩm tủ nhựa cao cấp cho mọi không
+                        gian sống. Cam kết chất lượng và dịch vụ tốt nhất.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6 relative inline-block">
+                        Liên Kết Nhanh
+                        <span
+                            class="absolute bottom-0 left-0 w-full h-0.5 bg-orange-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                    </h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="footer-link">Trang chủ</a></li>
+                        <li><a href="#" class="footer-link">Sản phẩm</a></li>
+                        <li><a href="#" class="footer-link">Bộ sưu tập</a></li>
+                        <li><a href="#" class="footer-link">Dự án tiêu biểu</a></li>
+                        <li><a href="#" class="footer-link">Tin tức</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Liên Hệ</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-phone-alt text-orange-500 mt-1"></i>
+                            <div>
+                                <p class="text-gray-400">Hotline</p>
+                                <a href="tel:0972774646"
+                                    class="text-white hover:text-orange-500 transition duration-300">097.277.4646</a>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-envelope text-orange-500 mt-1"></i>
+                            <div>
+                                <p class="text-gray-400">Email</p>
+                                <a href="mailto:info@noithatnhuahanoi.com"
+                                    class="text-white hover:text-orange-500 transition duration-300">info@noithatnhuahanoi.com</a>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt text-orange-500 mt-1"></i>
+                            <div>
+                                <p class="text-gray-400">Địa chỉ</p>
+                                <p class="text-white">Cầu Diễn, Nam Từ Liêm, Hà Nội</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Đăng Ký Nhận Tin</h3>
+                    <p class="text-gray-400 mb-4">Nhận thông tin mới nhất về sản phẩm và khuyến mãi</p>
+                    <form class="space-y-3">
+                        <input type="email" placeholder="Email của bạn"
+                            class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-orange-500 focus:outline-none transition duration-300">
+                        <button type="submit"
+                            class="w-full bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition duration-300 flex items-center justify-center">
+                            <span>Đăng ký</span>
+                            <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <p class="text-gray-400">© 2024 Nội Thất Chất Lượng Hà Nội. All rights reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-orange-500 transition duration-300">Chính sách bảo
+                            mật</a>
+                        <a href="#" class="text-gray-400 hover:text-orange-500 transition duration-300">Điều khoản sử
+                            dụng</a>
+                        <a href="#" class="text-gray-400 hover:text-orange-500 transition duration-300">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav md:hidden">
+        <div class="bottom-nav-grid">
+            <a href="index.html" class="bottom-nav-item active" id="home-nav">
+                <i class="fas fa-home"></i>
+                <span>Trang chủ</span>
+            </a>
+            <a href="./sanpham.html" class="bottom-nav-item" id="products-nav">
+                <i class="fas fa-box"></i>
+                <span>Sản phẩm</span>
+            </a>
+            <a href="./bosuutap.html" class="bottom-nav-item" id="gallery-nav">
+                <i class="fas fa-images"></i>
+                <span>Bộ sưu tập</span>
+            </a>
+            <a href="./blog.html" class="bottom-nav-item" id="blog-nav">
+                <i class="fas fa-newspaper"></i>
+                <span>Blog</span>
+            </a>
+        </div>
+    </nav>
+
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Set the active tab for this page
+        document.addEventListener('DOMContentLoaded', function () {
+            // Check if this is a page reload
+            const pageAccessedByReload = sessionStorage.getItem('pageReloaded') === 'true';
+
+            // Only set products tab as active if this is not a page reload
+            if (!pageAccessedByReload) {
+                // Set products tab as active for this page
+                localStorage.setItem('activeTabId', 'products-nav');
+
+                // Apply active class immediately
+                const bottomNavItems = document.querySelectorAll('.bottom-nav-item');
+                bottomNavItems.forEach(item => {
+                    item.classList.remove('active');
+                });
+                document.getElementById('products-nav')?.classList.add('active');
+            }
+        });
+    </script>
+    <script>
+        const pricingForm = document.getElementById('pricingForm');
+        const resultCard = document.getElementById('resultCard');
+        const resultContent = document.getElementById('resultContent');
+        const progressFill = document.getElementById('progressFill');
+        const historyList = document.getElementById('historyList');
+        const suggestSizeBtn = document.getElementById('suggestSize');
+        const clearHistoryBtn = document.getElementById('clearHistory');
+        const scrollIndicator = document.getElementById('scrollIndicator');
+
+        let history = JSON.parse(localStorage.getItem('pricingHistory')) || [];
+        let isLoadingFromHistory = false; // Flag to track if we're loading from history
+        let isScrolling = false; // Flag to track if scrolling is in progress
+        let hasScrolledToResult = false; // Flag to track if we've already scrolled to the result
+
+        // Enhanced smooth scrolling function using requestAnimationFrame
+        function smoothScrollTo(targetPosition, duration = 800, easing = 'easeInOutCubic') {
+            // Don't start another scroll if one is in progress
+            if (isScrolling) return;
+
+            isScrolling = true;
+            const startPosition = window.pageYOffset;
+            const distance = targetPosition - startPosition;
+            let startTime = null;
+
+            // Show scroll indicator
+            scrollIndicator.classList.add('active');
+
+            // Easing functions
+            const easings = {
+                linear: t => t,
+                easeInQuad: t => t * t,
+                easeOutQuad: t => t * (2 - t),
+                easeInOutQuad: t => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t,
+                easeInCubic: t => t * t * t,
+                easeOutCubic: t => (--t) * t * t + 1,
+                easeInOutCubic: t => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
+                easeInQuart: t => t * t * t * t,
+                easeOutQuart: t => 1 - (--t) * t * t * t,
+                easeInOutQuart: t => t < 0.5 ? 8 * t * t * t * t : 1 - 8 * (--t) * t * t * t
+            };
+
+            function step(timestamp) {
+                if (!startTime) startTime = timestamp;
+                const elapsed = timestamp - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const easeProgress = easings[easing](progress);
+
+                window.scrollTo(0, startPosition + distance * easeProgress);
+
+                if (elapsed < duration) {
+                    window.requestAnimationFrame(step);
+                } else {
+                    // Ensure we end exactly at the target position
+                    window.scrollTo(0, targetPosition);
+                    isScrolling = false;
+
+                    // Hide scroll indicator after a short delay
+                    setTimeout(() => {
+                        scrollIndicator.classList.remove('active');
+                    }, 500);
+                }
+            }
+
+            window.requestAnimationFrame(step);
+        }
+
+        // Function to get element's position with offset
+        function getScrollPosition(element, offset = 0) {
+            const rect = element.getBoundingClientRect();
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            // Use an extremely large fixed offset (300px) to ensure elements are never hidden behind header
+            const headerOffset = 300;
+            // Add offset to ensure element is not hidden behind header
+            return rect.top + scrollTop + offset - headerOffset;
+        }
+
+        // Function to center element in viewport
+        function centerElementInViewport(element, offsetPercent = 0) {
+            const rect = element.getBoundingClientRect();
+            const elementHeight = rect.height;
+            const windowHeight = window.innerHeight;
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            // Use an extremely large fixed offset (300px) to ensure elements are never hidden behind header
+            const headerOffset = 300;
+
+            // Calculate position to center the element
+            const centerPosition = rect.top + scrollTop - (windowHeight / 2) + (elementHeight / 2);
+
+            // Apply offset percentage
+            const offset = windowHeight * (offsetPercent / 100);
+
+            // Subtract header offset to ensure element is not hidden behind header
+            return centerPosition + offset - headerOffset;
+        }
+
+        updateHistory();
+
+        pricingForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const productType = document.getElementById('productType').value;
+            const width = parseFloat(document.getElementById('width').value);
+            const height = parseFloat(document.getElementById('height').value);
+            const depth = parseFloat(document.getElementById('depth').value);
+            const material = document.getElementById('material').value;
+
+            if (!productType || isNaN(width) || isNaN(height) || isNaN(depth) || !material) {
+                alert('Vui lòng nhập đầy đủ và đúng định dạng thông tin!');
+                return;
+            }
+
+            const basePrices = {
+                wardrobe: 2000000,
+                kitchen: 2500000,
+                shoe: 1800000,
+                study: 2200000,
+                book: 2000000,
+                bed: 3000000
+            };
+
+            const materialMultipliers = {
+                standard: 1,
+                premium: 1.3,
+                luxury: 1.6
+            };
+
+            const area = width * height * depth;
+            let basePrice = basePrices[productType] * area;
+            const materialMultiplier = materialMultipliers[material];
+            let totalPrice = basePrice * materialMultiplier + 500000;
+
+            const formattedPrice = totalPrice.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+            const standardPrice = (basePrice * 1 + 500000).toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+            const premiumPrice = (basePrice * 1.3 + 500000).toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+            const luxuryPrice = (basePrice * 1.6 + 500000).toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+
+            document.getElementById('resultProduct').textContent = getProductName(productType);
+            document.getElementById('resultSize').textContent = `${width}m x ${height}m x ${depth}m`;
+            document.getElementById('resultMaterial').textContent = getMaterialName(material);
+
+            // Store the total price for the counter animation
+            document.getElementById('resultPrice').dataset.finalPrice = totalPrice;
+            document.getElementById('resultPrice').textContent = '0 đ'; // Start from 0
+
+            document.getElementById('standardPrice').textContent = standardPrice;
+            document.getElementById('premiumPrice').textContent = premiumPrice;
+            document.getElementById('luxuryPrice').textContent = luxuryPrice;
+
+            // Show result card
+            resultCard.style.display = 'block';
+
+            // Reset progress bar
+            progressFill.style.width = '0';
+            document.querySelectorAll('.progress-step').forEach(step => {
+                step.classList.remove('active');
+            });
+
+            // Animate progress bar with steps
+            animateProgressBar();
+
+            // Only add to history if not loading from history
+            if (!isLoadingFromHistory) {
+                const quote = { productType, width, height, depth, material, totalPrice, timestamp: new Date().getTime(), date: new Date().toLocaleString('vi-VN') };
+                history.unshift(quote);
+                if (history.length > 5) history.pop();
+                localStorage.setItem('pricingHistory', JSON.stringify(history));
+                updateHistory();
+            }
+
+            // Reset the scroll flag when starting a new calculation
+            hasScrolledToResult = false;
+
+            // Scroll to "Kết Quả Báo Giá" section on all devices (desktop, tablet, and mobile)
+            // Add a slight delay to ensure the DOM is updated
+            setTimeout(() => {
+                // Find the result card title ("Kết Quả Báo Giá")
+                const resultCardTitle = resultCard.querySelector('h2');
+
+                if (resultCardTitle && !hasScrolledToResult) {
+                    // Set the flag to indicate we've scrolled
+                    hasScrolledToResult = true;
+
+                    // Calculate offset based on device type
+                    const isMobileView = window.innerWidth <= 768;
+                    // Use larger offset for mobile to account for smaller screen
+                    const offset = isMobileView ? 150 : 90; // Different offset for mobile and desktop
+
+                    // Scroll to the result card title with the offset
+                    smoothScrollTo(getScrollPosition(resultCardTitle, offset), 800, 'easeOutCubic');
+
+                    // Add a subtle highlight effect to the result card
+                    resultCard.classList.add('highlight-section');
+                    setTimeout(() => {
+                        resultCard.classList.remove('highlight-section');
+                    }, 1500);
+                }
+            }, 300);
+        });
+
+        suggestSizeBtn.addEventListener('click', function () {
+            const productType = document.getElementById('productType').value;
+            const sizes = {
+                wardrobe: { width: 2, height: 2.4, depth: 0.6 },
+                kitchen: { width: 3, height: 2.2, depth: 0.6 },
+                shoe: { width: 1, height: 1.2, depth: 0.4 },
+                study: { width: 1.5, height: 2, depth: 0.5 },
+                book: { width: 1.2, height: 2, depth: 0.4 },
+                bed: { width: 2, height: 1.2, depth: 0.5 }
+            };
+
+            if (productType && sizes[productType]) {
+                const { width, height, depth } = sizes[productType];
+                const message = `Kích thước gợi ý cho ${getProductName(productType)}: Rộng: ${width}m, Cao: ${height}m, Sâu: ${depth}m`;
+                showNotification('sizeNotification', message);
+                suggestSizeBtn.dataset.suggestedWidth = width;
+                suggestSizeBtn.dataset.suggestedHeight = height;
+                suggestSizeBtn.dataset.suggestedDepth = depth;
+            } else {
+                showNotification('productTypeNotification');
+            }
+        });
+
+        clearHistoryBtn.addEventListener('click', function () {
+            if (history.length === 0) return;
+            showNotification('clearHistoryNotification');
+        });
+
+        function updateHistory() {
+            if (history.length === 0) {
+                historyList.innerHTML = '<p class="text-gray-600 text-center">Chưa có báo giá nào</p>';
+                return;
+            }
+
+            historyList.innerHTML = history.map((item, index) => {
+                // Get relative time if timestamp exists, otherwise use the date
+                const timeDisplay = item.timestamp ? getRelativeTime(item.timestamp) : item.date;
+
+                // Add a highlight class for the most recent item
+                const isNewest = index === 0;
+                const newestClass = isNewest ? 'bg-orange-50 border-l-4 border-orange-500 pl-3' : '';
+
+                return `
+                <div class="history-item ${newestClass}" onclick="loadQuote(${index})">
+                    <div class="flex justify-between items-start">
+                        <p class="font-semibold">${getProductName(item.productType)}</p>
+                        ${isNewest ? `<span class="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded-full font-medium">${timeDisplay}</span>` : ''}
+                    </div>
+                    <p class="text-sm text-gray-600">${item.width}m x ${item.height}m x ${item.depth}m - ${item.totalPrice.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}</p>
+                    <p class="text-xs text-gray-500">${isNewest ? '' : timeDisplay}</p>
+                </div>
+                `;
+            }).join('');
+        }
+
+        function loadQuote(index) {
+            const item = history[index];
+            document.getElementById('productType').value = item.productType;
+            document.getElementById('width').value = item.width;
+            document.getElementById('height').value = item.height;
+            document.getElementById('depth').value = item.depth;
+            document.getElementById('material').value = item.material;
+
+            // Set the flag to indicate we're loading from history
+            isLoadingFromHistory = true;
+
+            // Reset the scroll flag when loading from history
+            hasScrolledToResult = false;
+
+            // Dispatch the submit event to calculate and display the price
+            pricingForm.dispatchEvent(new Event('submit'));
+
+            // Reset the flag after the event has been processed
+            setTimeout(() => {
+                isLoadingFromHistory = false;
+
+                // Check if mobile device (different scrolling behavior)
+                const isMobile = window.innerWidth <= 768;
+
+                // Ensure the result card is visible before scrolling
+                setTimeout(() => {
+                    // Make sure resultCard is visible
+                    if (resultCard.style.display !== 'block') {
+                        resultCard.style.display = 'block';
+                    }
+
+                    // Ensure the progress bar is filled
+                    animateProgressBar(true); // true means instant animation
+
+                    // Add a subtle pulse animation to the result card
+                    resultCard.classList.add('pulse-animation');
+                    setTimeout(() => {
+                        resultCard.classList.remove('pulse-animation');
+                    }, 1500);
+
+                    // For all devices, scroll to the result card title
+                    // This is a separate case from the progress-fill animation
+                    // Here we're loading directly from history, so we need to scroll
+                    const resultCardTitle = resultCard.querySelector('h2');
+
+                    if (resultCardTitle) {
+                        // Calculate offset based on device type
+                        const isMobileView = window.innerWidth <= 768;
+                        // Use larger offset for mobile to account for smaller screen
+                        const offset = isMobileView ? 150 : 90; // Different offset for mobile and desktop
+
+                        // Scroll to the result card title with the offset
+                        smoothScrollTo(getScrollPosition(resultCardTitle, offset), 800, 'easeOutCubic');
+
+                        // Add a subtle highlight effect to the result card
+                        resultCard.classList.add('highlight-section');
+                        setTimeout(() => {
+                            resultCard.classList.remove('highlight-section');
+                        }, 1500);
+                    } else {
+                        // Fallback to previous method with adjusted offset
+                        const targetPosition = centerElementInViewport(resultCard, -5); // -5% offset from center
+                        smoothScrollTo(targetPosition, 800, 'easeOutCubic');
+                    }
+
+                    // Highlight the selected item in history without showing notification
+                    const historyItems = document.querySelectorAll('.history-item');
+                    historyItems.forEach((item, i) => {
+                        if (i === index) {
+                            item.classList.add('selected-history-item');
+                        } else {
+                            item.classList.remove('selected-history-item');
+                        }
+                    });
+
+                    // Remove highlight after 3 seconds
+                    setTimeout(() => {
+                        historyItems.forEach(item => {
+                            item.classList.remove('selected-history-item');
+                        });
+                    }, 3000);
+                }, isMobile ? 400 : 300); // Slightly shorter delay for better responsiveness
+            }, 200); // Reduced delay for better responsiveness
+        }
+
+        function getProductName(type) {
+            const names = { wardrobe: 'Tủ quần áo', kitchen: 'Tủ bếp', shoe: 'Tủ giày', study: 'Tủ bàn học', book: 'Tủ sách', bed: 'Giường ngủ' };
+            return names[type];
+        }
+
+        function getMaterialName(material) {
+            const names = { standard: 'Nhựa tiêu chuẩn', premium: 'Nhựa cao cấp', luxury: 'Nhựa siêu bền' };
+            return names[material];
+        }
+
+        // Notification Functions
+        function showNotification(id, message = '') {
+            const overlay = document.getElementById('notificationOverlay');
+            const notification = document.getElementById(id);
+
+            if (message && id === 'sizeNotification') {
+                document.getElementById('sizeSuggestionText').textContent = message;
+            }
+
+            // First make the element visible but transparent
+            notification.style.display = 'block';
+
+            // Force a reflow to ensure the display change takes effect before adding the transition
+            notification.offsetHeight;
+
+            // Then add the overlay and transition to visible
+            overlay.classList.add('show');
+            notification.classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function hideNotification(id) {
+            const overlay = document.getElementById('notificationOverlay');
+            const notification = document.getElementById(id);
+
+            // First remove the show class to start the opacity transition
+            notification.classList.remove('show');
+            overlay.classList.remove('show');
+            document.body.style.overflow = '';
+
+            // Wait for the transition to complete before hiding the element
+            setTimeout(() => {
+                if (!notification.classList.contains('show')) {
+                    notification.style.display = 'none';
+                }
+            }, 300); // Match this to the transition duration in CSS
+        }
+
+        function applySuggestedSize() {
+            document.getElementById('width').value = suggestSizeBtn.dataset.suggestedWidth;
+            document.getElementById('height').value = suggestSizeBtn.dataset.suggestedHeight;
+            document.getElementById('depth').value = suggestSizeBtn.dataset.suggestedDepth;
+            hideNotification('sizeNotification');
+        }
+
+        function confirmClearHistory() {
+            history = [];
+            localStorage.setItem('pricingHistory', JSON.stringify(history));
+            updateHistory();
+            hideNotification('clearHistoryNotification');
+
+            // Hide the result card when clearing history
+            resultCard.style.display = 'none';
+
+            // Reset form fields
+            document.getElementById('productType').value = '';
+            document.getElementById('width').value = '';
+            document.getElementById('height').value = '';
+            document.getElementById('depth').value = '';
+            document.getElementById('material').value = '';
+
+            // Reset progress bar
+            progressFill.style.width = '0';
+            document.querySelectorAll('.progress-step').forEach(step => {
+                step.classList.remove('active');
+            });
+            document.querySelectorAll('.progress-label').forEach(label => {
+                label.classList.remove('active');
+            });
+
+            // Reset the scroll flag
+            hasScrolledToResult = false;
+        }
+
+        // Function to convert timestamp to relative time format
+        function getRelativeTime(timestamp) {
+            const now = new Date();
+            const date = new Date(timestamp);
+            const diffInSeconds = Math.floor((now - date) / 1000);
+
+            if (diffInSeconds < 5) {
+                return "vừa xong";
+            } else if (diffInSeconds < 60) {
+                return `${diffInSeconds} giây trước`;
+            } else if (diffInSeconds < 3600) {
+                const minutes = Math.floor(diffInSeconds / 60);
+                return `${minutes} phút trước`;
+            } else if (diffInSeconds < 86400) {
+                const hours = Math.floor(diffInSeconds / 3600);
+                return `${hours} giờ trước`;
+            } else {
+                const days = Math.floor(diffInSeconds / 86400);
+                return `${days} ngày trước`;
+            }
+        }
+
+        document.getElementById('notificationOverlay').addEventListener('click', function () {
+            hideNotification('sizeNotification');
+            hideNotification('clearHistoryNotification');
+            hideNotification('productTypeNotification');
+            // selectedQuoteNotification has been removed
+        });
+
+        // Function to prepare notification content has been removed
+        // This functionality is now handled directly in the loadQuote function
+
+        // Function to animate counter from 0 to target value
+        function animateCounter(element, targetValue, duration, startDelay = 0) {
+            // If instant animation is needed
+            if (duration === 0) {
+                element.textContent = targetValue.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+                return;
+            }
+
+            // Wait for the specified delay
+            setTimeout(() => {
+                const startTime = performance.now();
+                const startValue = 0;
+
+                // Function to update the counter value
+                function updateCounter(currentTime) {
+                    const elapsedTime = currentTime - startTime;
+                    const progress = Math.min(elapsedTime / duration, 1);
+
+                    // Use easeOutExpo for more natural counting effect
+                    // Progress goes from slow to fast to slow again
+                    const easedProgress = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+
+                    // Calculate current value
+                    const currentValue = Math.floor(startValue + (targetValue - startValue) * easedProgress);
+
+                    // Update the element text
+                    element.textContent = currentValue.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+
+                    // Continue animation if not complete
+                    if (progress < 1) {
+                        requestAnimationFrame(updateCounter);
+                    }
+                }
+
+                // Start the animation
+                requestAnimationFrame(updateCounter);
+            }, startDelay);
+        }
+
+        // Animated Progress Bar Function
+        function animateProgressBar(instant = false) {
+            const steps = [
+                document.getElementById('step1'),
+                document.getElementById('step2'),
+                document.getElementById('step3'),
+                document.getElementById('step4'),
+                document.getElementById('step5')
+            ];
+
+            // Get all progress labels
+            const labels = document.querySelectorAll('.progress-label');
+
+            const progressWidths = ['20%', '40%', '60%', '80%', '100%'];
+            const stepDelays = instant ? [0, 0, 0, 0, 0] : [300, 600, 900, 1200, 1500];
+            const fillDuration = instant ? 0 : 1200; // Match this with the CSS transition duration
+
+            // Get the price element and its target value
+            const priceElement = document.getElementById('resultPrice');
+            const targetPrice = parseInt(priceElement.dataset.finalPrice || '0');
+
+            // Reset all steps and labels
+            steps.forEach(step => step.classList.remove('active'));
+            labels.forEach(label => label.classList.remove('active'));
+
+            // If instant, just set everything to complete state
+            if (instant) {
+                steps.forEach(step => step.classList.add('active'));
+                labels[labels.length - 1].classList.add('active'); // Only show the last label
+                progressFill.style.width = '100%';
+
+                // Update mobile step indicator
+                const progressCurrentStep = document.getElementById('progressCurrentStep');
+                if (progressCurrentStep) {
+                    progressCurrentStep.textContent = 'Hoàn thành!';
+                }
+
+                // Instantly set the final price
+                animateCounter(priceElement, targetPrice, 0);
+
+                return Promise.resolve();
+            }
+
+            // Start the price counter animation when we reach 60% (3rd step)
+            // This makes it feel like the calculation is happening as the progress bar fills
+            setTimeout(() => {
+                animateCounter(priceElement, targetPrice, 1500); // Duration matches the remaining progress bar time
+            }, stepDelays[2]); // Start at the 3rd step
+
+            // Animate each step with delay
+            steps.forEach((step, index) => {
+                setTimeout(() => {
+                    // Activate the step
+                    step.classList.add('active');
+
+                    // Update progress fill width
+                    progressFill.style.width = progressWidths[index];
+
+                    // Show the current label and hide previous ones
+                    labels.forEach((label, labelIndex) => {
+                        if (labelIndex === index) {
+                            label.classList.add('active');
+                        } else {
+                            label.classList.remove('active');
+                        }
+                    });
+
+                    // Update mobile step indicator with current step text
+                    const progressCurrentStep = document.getElementById('progressCurrentStep');
+                    if (progressCurrentStep) {
+                        const stepTexts = [
+                            'Đang đọc dữ liệu...',
+                            'Đang tính toán...',
+                            'Đang phân tích...',
+                            'Đang so sánh...',
+                            'Hoàn thành!'
+                        ];
+                        progressCurrentStep.textContent = stepTexts[index];
+
+                        // Add a subtle fade-in effect
+                        progressCurrentStep.animate(
+                            [
+                                { opacity: 0.5 },
+                                { opacity: 1 }
+                            ],
+                            { duration: 300, easing: 'ease-out' }
+                        );
+                    }
+
+                    // Add a subtle pulse effect to the current step
+                    step.animate(
+                        [
+                            { transform: 'scale(1)', background: '#f97316' },
+                            { transform: 'scale(1.5)', background: '#f97316', offset: 0.5 },
+                            { transform: 'scale(1)', background: '#f97316' }
+                        ],
+                        { duration: 600, easing: 'ease-out' }
+                    );
+
+                    // When we reach the last step, scroll to the "Kết Quả Báo Giá" section
+                    // Only scroll if we haven't already scrolled (controlled by hasScrolledToResult flag)
+                    if (index === steps.length - 1 && !instant && !hasScrolledToResult) {
+                        // Add a delay to ensure the animation is complete and the page is fully rendered
+                        // Use a longer delay on mobile for better reliability
+                        const isMobile = window.innerWidth <= 768;
+                        const scrollDelay = isMobile ? 800 : 500;
+                        setTimeout(() => {
+                            // Find the result card title ("Kết Quả Báo Giá")
+                            const resultCardTitle = resultCard.querySelector('h2');
+
+                            if (resultCardTitle && !hasScrolledToResult) {
+                                // Set the flag to indicate we've scrolled
+                                hasScrolledToResult = true;
+
+                                // Calculate offset based on device type
+                                const isMobileView = window.innerWidth <= 768;
+                                // Use larger offset for mobile to account for smaller screen
+                                const offset = isMobileView ? 150 : 90; // Different offset for mobile and desktop
+
+                                // Scroll to the result card title with the offset
+                                smoothScrollTo(getScrollPosition(resultCardTitle, offset), 800, 'easeOutCubic');
+
+                                // Add a subtle highlight effect to the result card
+                                resultCard.classList.add('highlight-section');
+                                setTimeout(() => {
+                                    resultCard.classList.remove('highlight-section');
+                                }, 1500);
+                            }
+                        }, scrollDelay);
+                    }
+                }, stepDelays[index]);
+            });
+
+            // Return a promise that resolves when animation is complete
+            return new Promise(resolve => {
+                setTimeout(resolve, fillDuration + stepDelays[stepDelays.length - 1] + 100);
+            });
+        }
+
+        // Update relative times every minute
+        setInterval(() => {
+            if (history.length > 0) {
+                updateHistory();
+            }
+        }, 60000);
+
+        // Detect touch events to optimize scrolling on mobile devices
+        let isTouchDevice = false;
+
+        // Check if device supports touch events
+        window.addEventListener('touchstart', function onFirstTouch() {
+            isTouchDevice = true;
+
+            // Remove event listener once detected
+            window.removeEventListener('touchstart', onFirstTouch);
+        }, false);
+
+        // Optimize scrolling for iOS devices
+        if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+            // Add specific optimizations for iOS
+            document.documentElement.style.cssText = 'height: 100%; overflow: auto; -webkit-overflow-scrolling: touch;';
+        }
+
+        // Prevent scrolling issues when animations are running
+        document.addEventListener('scroll', function () {
+            if (isScrolling) {
+                // Don't allow manual scrolling to interrupt animations
+                return false;
+            }
+        }, { passive: true });
+    </script>
+</body>
+
+</html>

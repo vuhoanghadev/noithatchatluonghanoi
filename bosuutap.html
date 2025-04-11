@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bộ Sưu Tập - Nội Thất Chất Lượng Hà Nội</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Bộ Sưu Tập - Nội Thất Chất Lượng Hà Nội">
+    <meta name="description"
+        content="Khám phá bộ sưu tập đa dạng các sản phẩm nội thất nhựa cao cấp của chúng tôi, được thiết kế để phù hợp với mọi không gian sống.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tunhuachatluonghanoi.vercel.app/bosuutap.html">
+    <meta property="og:title" content="Bộ Sưu Tập - Nội Thất Chất Lượng Hà Nội">
+    <meta property="og:description"
+        content="Khám phá bộ sưu tập đa dạng các sản phẩm nội thất nhựa cao cấp của chúng tôi, được thiết kế để phù hợp với mọi không gian sống.">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2158&auto=format&fit=crop">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tunhuachatluonghanoi.vercel.app/bosuutap.html">
+    <meta property="twitter:title" content="Bộ Sưu Tập - Nội Thất Chất Lượng Hà Nội">
+    <meta property="twitter:description"
+        content="Khám phá bộ sưu tập đa dạng các sản phẩm nội thất nhựa cao cấp của chúng tôi, được thiết kế để phù hợp với mọi không gian sống.">
+    <meta property="twitter:image"
+        content="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2158&auto=format&fit=crop">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./image/logo.svg">
+
+    <!-- Stylesheets -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu {
+                display: block;
+            }
+
+            .desktop-menu {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+    <!-- tiện ích facebook  -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v22.0"></script>
+
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <!-- Logo -->
+            <a href="./index.html" class="logo-container">
+                <div class="logo-icon">
+                    <img src="./image/logo.svg" alt="" srcset="">
+                </div>
+                <div class="logo-text">
+                    <h1>Nội Thất Chất Lượng Hà Nội</h1>
+                    <p>Giải pháp tủ nhựa cao cấp</p>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center desktop-nav">
+                <a href="./index.html" class="nav-link">
+                    <span>Trang chủ</span>
+                    <span class="nav-link-underline"></span>
+                </a>
+                <a href="./sanpham.html" class="nav-link">
+                    <span>Sản phẩm</span>
+                    <span class="nav-link-underline"></span>
+                </a>
+                <a href="./bosuutap.html" class="nav-link active">
+                    <span>Bộ sưu tập</span>
+                    <span class="nav-link-underline"></span>
+                </a>
+                <a href="./blog.html" class="nav-link">
+                    <span>Blog</span>
+                    <span class="nav-link-underline"></span>
+                </a>
+                <a href="./baogiaAI.html" class="nav-link">
+                    <span>Báo giá</span>
+                    <span class="nav-link-underline"></span>
+                </a>
+                <button class="cta-button">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Tư vấn miễn phí</span>
+                    <span class="cta-button-underline"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-toggle" class="mobile-menu-toggle md:hidden">
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+            </button>
+        </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="mobile-menu-inner" style="background-color: snow;">
+                <div class="mobile-menu-header" style="height: 95px;">
+                    <a href="#" class="logo-container mobile-logo-container">
+                        <div class="logo-icon mobile-logo-icon">
+                            <img src="./image/logo.svg" alt="" srcset="">
+                        </div>
+                        <div class="logo-text mobile-logo-text">
+                            <h1>Nội Thất Chất Lượng Hà Nội</h1>
+                            <p>Giải pháp tủ nhựa cao cấp</p>
+                        </div>
+                    </a>
+                    <button id="mobile-menu-close" class="mobile-menu-toggle">
+                        <span class="toggle-bar"></span>
+                        <span class="toggle-bar"></span>
+                        <span class="toggle-bar"></span>
+                    </button>
+                </div>
+
+
+
+                <h3 class="category-title">Danh mục sản phẩm</h3>
+
+                <div class="product-categories">
+                    <a href="#" class="category-box">
+                        <div class="category-image">
+                            <img src="./image/icon tủ quần áo.png" alt="Tủ quần áo">
+                        </div>
+                        <div class="category-name">Tủ quần áo</div>
+                    </a>
+
+                    <a href="#" class="category-box">
+                        <div class="category-image">
+                            <img src="./image/icon tủ bếp.png" alt="Tủ bếp">
+                        </div>
+                        <div class="category-name">Tủ bếp</div>
+                    </a>
+
+                    <a href="#" class="category-box">
+                        <div class="category-image">
+                            <img src="./image/icon bàn làm việc.png" alt="Tủ bàn học">
+                        </div>
+                        <div class="category-name">Bàn làm việc</div>
+                    </a>
+
+                    <a href="#" class="category-box">
+                        <div class="category-image">
+                            <img src="./image/icon bàn học.png" alt="Bàn học">
+                        </div>
+                        <div class="category-name">Bàn Học</div>
+                    </a>
+
+                    <a href="#" class="category-box">
+                        <div class="category-image">
+                            <img src="./image/icon tủ giày.png" alt="Tủ giày">
+                        </div>
+                        <div class="category-name">Tủ giày</div>
+                    </a>
+
+                    <a href="#" class="category-box">
+                        <div class="category-image">
+                            <img src="./image/icon tủ sách.png" alt="Tủ sách">
+                        </div>
+                        <div class="category-name">Tủ sách</div>
+                    </a>
+
+                    <a href="#" class="category-box">
+                        <div class="category-image">
+                            <img src="./image/icon giường ngủ.png" alt="Giường ngủ">
+                        </div>
+                        <div class="category-name">Giường ngủ</div>
+                    </a>
+
+                </div>
+
+                <div class="mobile-menu-divider"></div>
+
+                <div class="quick-links">
+                    <h3 class="quick-links-title">Truy cập nhanh</h3>
+                    <div class="quick-links-grid">
+                        <a href="#" class="quick-link-item">
+                            <i class="fas fa-home"></i>
+                            <span>Trang chủ</span>
+                        </a>
+                        <a href="#" class="quick-link-item">
+                            <i class="fas fa-images"></i>
+                            <span>Bộ sưu tập</span>
+                        </a>
+                        <a href="#" class="quick-link-item">
+                            <i class="fas fa-newspaper"></i>
+                            <span>Tin tức</span>
+                        </a>
+                        <a href="#" class="quick-link-item">
+                            <i class="fas fa-phone"></i>
+                            <span>Liên hệ</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mobile-menu-divider"></div>
+
+                <div class="mobile-cta">
+                    <button class="mobile-cta-button">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Tư vấn miễn phí</span>
+                    </button>
+                </div>
+
+                <div class="mobile-contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Hotline: <a href="tel:0987654321">0987.654.321</a></span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email: <a href="mailto:info@noithatnhuahanoi.com">info@noithatnhuahanoi.com</a></span>
+                    </div>
+                </div>
+
+                <div class="mobile-social">
+                    <a href="#" class="mobile-social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="mobile-social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="mobile-social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="mobile-social-icon"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 pt-24 pb-12">
+        <h1 class="text-3xl font-bold text-center mb-8">Bộ Sưu Tập Nội Thất</h1>
+        <p class="text-gray-600 text-center max-w-3xl mx-auto mb-12">Khám phá bộ sưu tập đa dạng các sản phẩm nội thất
+            nhựa cao cấp của chúng tôi, được thiết kế để phù hợp với mọi không gian sống.</p>
+
+        <!-- Nội dung trang sẽ được thêm vào đây -->
+        <div class="text-center py-8">
+            <p class="text-gray-500">Nội dung đang được cập nhật...</p>
+        </div>
+    </main>
+
+    <!-- Footer sẽ được thêm vào sau -->
+
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav md:hidden">
+        <div class="bottom-nav-grid">
+            <a href="index.html" class="bottom-nav-item active" id="home-nav">
+                <i class="fas fa-home"></i>
+                <span>Trang chủ</span>
+            </a>
+            <a href="./sanpham.html" class="bottom-nav-item" id="products-nav">
+                <i class="fas fa-box"></i>
+                <span>Sản phẩm</span>
+            </a>
+            <a href="./bosuutap.html" class="bottom-nav-item" id="gallery-nav">
+                <i class="fas fa-images"></i>
+                <span>Bộ sưu tập</span>
+            </a>
+            <a href="./blog.html" class="bottom-nav-item" id="blog-nav">
+                <i class="fas fa-newspaper"></i>
+                <span>Blog</span>
+            </a>
+        </div>
+    </nav>
+
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
